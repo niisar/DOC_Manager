@@ -43,9 +43,15 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="asana.tt\asana.ttInstance\Elements.xml" />
-    <Content Include="asana.tt\Elements.xml" />
-    <Content Include="asana.tt\Schema.xml" />
+    <Content Include="asana.tt\asana.ttInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="asana.tt\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="asana.tt\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\css\angular.css" />
     <Content Include="Content\css\angular\angular-motion.css" />
     <Content Include="Content\css\angular\old_angular-motion.css" />

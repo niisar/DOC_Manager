@@ -1,6 +1,6 @@
 ﻿(function () {
     'use strict';
-    var controllerId = "Document.UpdateTask";
+    var controllerId = "Task.UpdateTask";
     angular.module('docapp').controller(controllerId, ['$rootScope', 'common', UpdateTask])
 
     function UpdateTask($rootScope, common) {

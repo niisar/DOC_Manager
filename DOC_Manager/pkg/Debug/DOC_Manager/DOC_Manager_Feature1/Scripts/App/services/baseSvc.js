@@ -2,12 +2,7 @@
 (function () {
     angular.module("docapp")
         .factory("baseSvc", ["$http", "$q", function ($http, $q) {
-            //console.log(_spPageContextInfo.siteAbsoluteUrl);
             var baseUrl = _spPageContextInfo.siteAbsoluteUrl;
-            console.log(_spPageContextInfo.siteAbsoluteUrl);
-
-            //var baseUrl = _spPageContextInfo.siteAbsoluteUrl;
-
             var getRequest = function (query) {
                 var deferred = $q.defer();
                 $http({

@@ -28,9 +28,8 @@
                         <li ng-class="['clearfix',{'task-highlight': $index == selectedIndex}]" ng-click="taskClick($index,tsk)">
                             <div class="name">
                                 <div>
-                                    <label>
-                                        {{::tsk.Title}}
-                                        <span ng-class="::['label',{'label-danger': 'High' == tsk.PriorityCode},{'label-warning': 'Medium' == tsk.PriorityCode},{'label-success': 'Low' == tsk.PriorityCode}]">{{::tsk.PriorityCode}}</span>
+                                    <label style="width:350px">
+                                        {{::tsk.Title}} <span ng-class="::['label',{'label-danger': '3' == tsk.PriorityCod},{'label-warning': '2' == tsk.PriorityCod},{'label-success': '1' == tsk.PriorityCod}]"> {{tsk.PriorityCod == "1" ? "Low" : tsk.PriorityCod == "2" ? "Medium" : tsk.PriorityCod == "3" ? "High" : "No Priority "}} </span>
                                     </label>
                                 </div>
                             </div>
@@ -49,13 +48,12 @@
             <div class="main-box weather-box">
                 <header class="main-box-header clearfix">
                     <div class="pull-left" style="margin-left:-9px">
-                        <h2 buttons="no" href="#" editable-select="TaskDtl.Category" e-ng-options="s.value as s.text for s in Category" class="btn pull-left">
+                        <h2 buttons="no" href="#" editable-select="TaskDtl.Category" e-ng-options="s.value as s.text for s in Category" class="btn pull-left"  onaftersave="updateCategory()">
                             {{CategoryStatus()}}
                         </h2>
                     </div>
-
                     <div class="icon-box pull-right" ng-class="showPriorityClass()">
-                        <a buttons="no" href="#" editable-select="TaskDtl.Priorities" ng-class="showPriorityClass()" e-ng-options="s.value as s.text for s in Priorities" class="btn pull-left">
+                        <a buttons="no" href="#" editable-select="TaskDtl.Priorities" ng-class="showPriorityClass()" e-ng-options="s.value as s.text for s in Priorities" class="btn pull-left" onaftersave="updatePriority()" >
                             {{showPriorityStatus()}}
                         </a>
                     </div>
@@ -67,13 +65,13 @@
                                 <div class="main-box">
                                     <div class="main-box-body  clearfix">
 
-                                        <a buttons="no" editable-text="TaskDtl.Title" e-class="width500">
+                                        <a buttons="no" editable-text="TaskDtl.Title" e-class="width500" onaftersave="updateTitle()">
                                             <h4>{{ TaskDtl.Title || 'no title' }}</h4>
                                         </a>
 
                                         <div class="current" style="padding:0px">
                                             <div class="pull-left">
-                                                <a buttons="no" editable-textarea="TaskDtl.Description" e-rows="5" e-cols="75">
+                                                <a buttons="no" editable-textarea="TaskDtl.Description" e-rows="5" e-cols="75" onaftersave="updateDesc()">
                                                     <pre style="">{{ TaskDtl.Description || 'no description' }}</pre>
                                                 </a>
                                             </div>
@@ -105,10 +103,11 @@
                             <div class="conversation-new-message">
                                 <form>
                                     <div class="form-group">
-                                        <textarea class="form-control" ng-model="txtComment" rows="2" placeholder="Enter your message..."></textarea>
+                                        <input type="hidden" ng-model="comment.tskid" />
+                                        <textarea class="form-control" ng-model="comment.Cmnt" rows="2" placeholder="Enter your message..."></textarea>
                                     </div>
                                     <div class="clearfix">
-                                        <button type="submit" class="btn btn-success pull-right" ng-click="putComment(ID)">Comment</button>
+                                        <button type="button" class="btn btn-success pull-right" ng-click="putComment(comment)">Comment</button>
                                     </div>
                                 </form>
                             </div>

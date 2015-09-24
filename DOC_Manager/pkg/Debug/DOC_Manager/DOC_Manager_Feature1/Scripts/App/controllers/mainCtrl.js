@@ -1,8 +1,15 @@
 ﻿(function () {
     'use strict';
     var app = angular.module('docapp');
-    app.controller("mainCtrl", function ($scope, $animate, $filter, ngDialog, taskSvc) {
+    app.controller("mainCtrl", function ($scope, $animate, $filter, ngDialog, taskSvc, $timeout) {
+        //$scope.kk = function () {
+        //    alert('d');
 
+        //};
+
+
+        $scope.myTaskList = [];
+        $scope.updatePriorityTsk = [];
         $scope.Priorities = [
          { value: '1', text: 'Low', Priority: 'Low', ShortCode: 'L', Class: 'Green' },
          { value: '2', text: 'Medium', Priority: 'Medium', ShortCode: 'M', Class: 'Yellow' },
@@ -59,8 +66,10 @@
         $scope.addTaskOpen = function () {
             ngDialog.open({
                 template: '../Templates/Task/AddTask.html',
-                controller: 'Task.AddTask',
-                closeByDocument: false
+                //controller: 'Task.AddTask',
+                closeByDocument: false,
+                preCloseCallback: 'updateMyTaskList',
+                scope: $scope
             });
         };
 
@@ -80,33 +89,104 @@
             //$scope.Priorities = $scope.Priorities;
             ngDialog.open({
                 template: '../Templates/Task/UpdateTask.html',
-                controller: 'Document.UpdateTask',
-                //preCloseCallback: 'updateMyTaskList',
+                controller: 'Task.UpdateTask',
+                preCloseCallback: 'updateMyTaskList',
                 closeByDocument: false,
                 scope: $scope
             });
         };
 
+        $scope.updateMyTaskList = function (value) {
+            $timeout(function () {
+                if (value == 'submit') {
 
+                    $scope.getMyTask();
+                    //console.log($scope.myTaskList);
+                    $scope.$watch('myTaskList', function () {
+                        console.log('watch');
+                        //$scope.getMyTask();
+                    });
+                } else {
+
+                }
+            }, 100);
+        };
 
 
         $('#page-wrapper').removeClass('nav-small');
 
         $scope.selectedIndex = 0;
 
-
+        //$scope.comment.tskid = '';
+        $scope.comment = [];
         getMyComment(1);
         function getMyComment(id) {
+            $scope.comment.tskid = id;
             taskSvc.getCommentsById(id)
             .then(function (response) {
                 $scope.myCommentList = response.d.results;
-                console.log(response.d.results);
+                
             })
-            //$scope.myCommentList = [{ "ActivityId": 8, "ActiveUserId": "ed1df834-d6b2-47fb-bbc0-7a564aab7e5b", "TaskID": 1, "ActivityType": 0, "Comments": "I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/ryan.png", "Name": "Ryan", "SurName": "Gossling", "UserId": 2 }, { "ActivityId": 10, "ActiveUserId": "a5f155a4-a089-48f9-acee-2f0932c02376", "TaskID": 1, "ActivityType": 0, "Comments": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/kunis.png", "Name": "Mila", "SurName": "Kuni", "UserId": 3 }, { "ActivityId": 12, "ActiveUserId": "a5f155a4-a089-48f9-acee-2f0932c02376", "TaskID": 1, "ActivityType": 0, "Comments": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/kunis.png", "Name": "Mila", "SurName": "Kuni", "UserId": 3 }, { "ActivityId": 14, "ActiveUserId": "ed1df834-d6b2-47fb-bbc0-7a564aab7e5b", "TaskID": 1, "ActivityType": 0, "Comments": "I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/ryan.png", "Name": "Ryan", "SurName": "Gossling", "UserId": 2 }, { "ActivityId": 16, "ActiveUserId": "a5f155a4-a089-48f9-acee-2f0932c02376", "TaskID": 1, "ActivityType": 0, "Comments": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/kunis.png", "Name": "Mila", "SurName": "Kuni", "UserId": 3 }, { "ActivityId": 17, "ActiveUserId": "a5f155a4-a089-48f9-acee-2f0932c02376", "TaskID": 1, "ActivityType": 0, "Comments": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/kunis.png", "Name": "Mila", "SurName": "Kuni", "UserId": 3 }, { "ActivityId": 18, "ActiveUserId": "ed1df834-d6b2-47fb-bbc0-7a564aab7e5b", "TaskID": 1, "ActivityType": 0, "Comments": "I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/ryan.png", "Name": "Ryan", "SurName": "Gossling", "UserId": 2 }, { "ActivityId": 19, "ActiveUserId": "a5f155a4-a089-48f9-acee-2f0932c02376", "TaskID": 1, "ActivityType": 0, "Comments": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will. ", "CreationTime": "2015-09-22T00:44:32.17", "ProfileImage": "img/users/kunis.png", "Name": "Mila", "SurName": "Kuni", "UserId": 3 }, { "ActivityId": 20, "ActiveUserId": "ed1df834-d6b2-47fb-bbc0-7a564aab7e5b", "TaskID": 1, "ActivityType": 0, "Comments": "sldfkj", "CreationTime": "2015-09-21T13:47:30.55", "ProfileImage": "img/users/ryan.png", "Name": "Ryan", "SurName": "Gossling", "UserId": 2 }, { "ActivityId": 22, "ActiveUserId": "ed1df834-d6b2-47fb-bbc0-7a564aab7e5b", "TaskID": 1, "ActivityType": 0, "Comments": "lasjhaskldfjh", "CreationTime": "2015-09-23T00:08:07.183", "ProfileImage": "img/users/ryan.png", "Name": "Ryan", "SurName": "Gossling", "UserId": 2 }]
+            
 
         };
 
-        $scope.icons = [{ "value": "Gear", "label": "<i class=\"fa fa-gear\"></i> Gear" }, { "value": "Globe", "label": "<i class=\"fa fa-globe\"></i> Globe" }, { "value": "Heart", "label": "<i class=\"fa fa-heart\"></i> Heart" }, { "value": "Camera", "label": "<i class=\"fa fa-camera\"></i> Camera" }];
+        $scope.putComment = function (comment) {
+            taskSvc.addNewActivities(comment)
+            .then(function (response) {
+                console.log(response);
+                getMyComment(comment.tskid);
+            });
+        };
+        
+        $scope.updatePriority = function () {
+            $scope.updatePriorityTsk = {
+                ID: $scope.comment.tskid,
+                PriorityCod: $scope.TaskDtl.Priorities,
+            };
+
+            taskSvc.updatePriority($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
+
+
+        $scope.updateCategory = function () {
+            $scope.updatePriorityTsk = {
+                ID: $scope.comment.tskid,
+                Category: $scope.TaskDtl.Category,
+            };
+
+            taskSvc.updateCategory($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
+
+        $scope.updateDesc = function () {
+            $scope.updatePriorityTsk = {
+                ID: $scope.comment.tskid,
+                Desc2: $scope.TaskDtl.Description,
+            };
+
+            taskSvc.updateDesc($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
+
+        $scope.updateTitle = function () {
+            $scope.updatePriorityTsk = {
+                ID: $scope.comment.tskid,
+                Title: $scope.TaskDtl.Title,
+            };
+
+            taskSvc.updateTitle($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
 
         $scope.user = {
             name: 'awesome user'

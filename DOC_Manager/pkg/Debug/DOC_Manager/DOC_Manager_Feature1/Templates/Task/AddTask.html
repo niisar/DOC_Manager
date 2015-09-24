@@ -17,19 +17,28 @@
             <div class="form-group">
                 <label for="priority" class="col-lg-2 control-label">Priority</label>
                 <div class="col-lg-10">
-                    <select ng-model="tsk.PriorityCode" ng-init="tsk.PriorityCode = 1" class="form-control">
+                    <select ng-model="tsk.PriorityCod" ng-init="tsk.PriorityCod = '1'" class="form-control">
                         <option value="1" ng-selected="true">Low</option>
                         <option value="2">Medium</option>
                         <option value="3">High</option>
                     </select>
                 </div>
             </div>
-
+            <div class="form-group">
+                <label for="Category" class="col-lg-2 control-label">Category</label>
+                <div class="col-lg-10">
+                    <select ng-model="tsk.CategoryCode" ng-init="tsk.CategoryCode = '1'" class="form-control">
+                        <option value="1" ng-selected="true">Finance</option>
+                        <option value="2">Human Resource</option>
+                        <option value="3">IT</option>
+                    </select>
+                </div>
+            </div>
 
             <div class="form-group">
                 <label for="assign" class="col-lg-2 control-label">Assign to</label>
                 <div class="col-lg-10">
-                    <select ng-model="tsk.AssignedUserId" id="assign" class="form-control">
+                    <select ng-model="tsk.AssignedUserId" ng-init="tsk.AssignedUserId = '2' id=" assign" class="form-control">
                         <option value="2">Ryan</option>
                         <option value="3">Mila</option>
                         <option value="4">Scarlett</option>
@@ -40,7 +49,7 @@
 
             <div class="form-group" style="margin-bottom: 0px ! important; text-align: right;">
                 <div class="col-lg-offset-2 col-lg-10">
-                    <button type="submit" ng-click="addMyTask(tsk)" class="btn btn-success">Submit</button>
+                    <button type="button" ng-click="addMyTask(tsk)" class="btn btn-success">Submit.</button>
                     <button type="button" class="btn btn-default" ng-click="closeThisDialog('button')">Close</button>
                     <input type="hidden" id="submitClick" ng-click="closeThisDialog('submit')" />
                 </div>

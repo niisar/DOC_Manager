@@ -38,8 +38,8 @@
             <div class="form-group">
                 <label for="assign" class="col-lg-2 control-label">Assign to</label>
                 <div class="col-lg-10">
-                    <select ng-model="tsk.AssignedUserId" ng-init="tsk.AssignedUserId = '2' id=" assign" class="form-control">
-                        <option value="2">Ryan</option>
+                    <select ng-model="tsk.AssignedUserId"  id="assign" class="form-control">
+                        <option value="2" ng-selected="true">Ryan</option>
                         <option value="3">Mila</option>
                         <option value="4">Scarlett</option>
                     </select>
