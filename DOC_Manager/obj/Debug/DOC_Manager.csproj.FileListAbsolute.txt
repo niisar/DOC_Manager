@@ -1,0 +1,3 @@
+C:\Users\adminlocal\Documents\Visual Studio 2013\Projects\DOC_Manager\DOC_Manager\bin\Debug\DOC_Manager.pdb
+C:\Users\adminlocal\Documents\Visual Studio 2013\Projects\DOC_Manager\DOC_Manager\obj\Debug\DOC_Manager.dll
+C:\Users\adminlocal\Documents\Visual Studio 2013\Projects\DOC_Manager\DOC_Manager\obj\Debug\DOC_Manager.pdb

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="asana.tt" OnQuickLaunch="TRUE" TemplateType="171" Url="Lists/asana.tt" Description="My List Instance" Hidden="FALSE"></ListInstance>
+</Elements>

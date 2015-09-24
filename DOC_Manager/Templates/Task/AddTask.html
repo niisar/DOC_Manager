@@ -1,0 +1,60 @@
+﻿<div data-ng-controller="Task.AddTask">
+    <div class="main-box-body clearfix">
+        <form class="form-horizontal ng-pristine ng-valid" role="form">
+            <div class="form-group">
+                <label for="title" class="col-lg-2 control-label">Title</label>
+                <div class="col-lg-10">
+                    <input ng-model="tsk.Title" class="form-control" id="title" placeholder="Enter Title" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="col-lg-2 control-label">Description</label>
+                <div class="col-lg-10">
+                    <textarea ng-model="tsk.Description" class="form-control" id="desc" placeholder="Description" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="priority" class="col-lg-2 control-label">Priority</label>
+                <div class="col-lg-10">
+                    <select ng-model="tsk.PriorityCod" ng-init="tsk.PriorityCod = '1'" class="form-control">
+                        <option value="1" ng-selected="true">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Category" class="col-lg-2 control-label">Category</label>
+                <div class="col-lg-10">
+                    <select ng-model="tsk.CategoryCode" ng-init="tsk.CategoryCode = '1'" class="form-control">
+                        <option value="1" ng-selected="true">Finance</option>
+                        <option value="2">Human Resource</option>
+                        <option value="3">IT</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="assign" class="col-lg-2 control-label">Assign to</label>
+                <div class="col-lg-10">
+                    <select ng-model="tsk.AssignedUserId" ng-init="tsk.AssignedUserId = '2' id=" assign" class="form-control">
+                        <option value="2">Ryan</option>
+                        <option value="3">Mila</option>
+                        <option value="4">Scarlett</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0px ! important; text-align: right;">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="button" ng-click="addMyTask(tsk)" class="btn btn-success">Submit.</button>
+                    <button type="button" class="btn btn-default" ng-click="closeThisDialog('button')">Close</button>
+                    <input type="hidden" id="submitClick" ng-click="closeThisDialog('submit')" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,120 @@
+﻿<div data-ng-controller="Task.MyTask">
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="content-header" class="clearfix">
+                <div class="pull-left">
+                    <ol class="breadcrumb">
+                        <li><a href="">Home</a></li>
+                        <li class="active"><span>My Task</span></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-class="[{'col-lg-5': selectedIndex != -1},{'col-lg-12': selectedIndex == -1},'col-md-8','col-sm-6','col-xs-12']">
+            <div class="main-box">
+                <header class="main-box-header clearfix">
+                    <h2 class="pull-left">My Task</h2>
+                    <div class="icon-box pull-right">
+                        <a href="" class="btn pull-left" ng-click="getMyTask()">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                    </div>
+                </header>
+                <div class="main-box-body clearfix">
+                    <ul class="widget-todo" ng-repeat="tsk in myTaskList">
+                        <li ng-class="['clearfix',{'task-highlight': $index == selectedIndex}]" ng-click="taskClick($index,tsk)">
+                            <div class="name">
+                                <div>
+                                    <label style="width:350px">
+                                        {{::tsk.Title}} <span ng-class="::['label',{'label-danger': '3' == tsk.PriorityCod},{'label-warning': '2' == tsk.PriorityCod},{'label-success': '1' == tsk.PriorityCod}]"> {{tsk.PriorityCod == "1" ? "Low" : tsk.PriorityCod == "2" ? "Medium" : tsk.PriorityCod == "3" ? "High" : "No Priority "}} </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="" class="table-link" ng-click="editTaskOpen(tsk);">
+                                    <i class="fa fa-check"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-10 col-sm-6 col-xs-12" ng-show="selectedIndex != -1">
+            <div class="main-box weather-box">
+                <header class="main-box-header clearfix">
+                    <div class="pull-left" style="margin-left:-9px">
+                        <h2 buttons="no" href="#" editable-select="TaskDtl.Category" e-ng-options="s.value as s.text for s in Category" class="btn pull-left"  onaftersave="updateCategory()">
+                            {{CategoryStatus()}}
+                        </h2>
+                    </div>
+                    <div class="icon-box pull-right" ng-class="showPriorityClass()">
+                        <a buttons="no" href="#" editable-select="TaskDtl.Priorities" ng-class="showPriorityClass()" e-ng-options="s.value as s.text for s in Priorities" class="btn pull-left" onaftersave="updatePriority()" >
+                            {{showPriorityStatus()}}
+                        </a>
+                    </div>
+                </header>
+                <div class="main-box-body clearfix">
+                    <div class="conversation-wrapper">
+                        <div class="conversation-content">
+                            <div class="conversation-inner">
+                                <div class="main-box">
+                                    <div class="main-box-body  clearfix">
+
+                                        <a buttons="no" editable-text="TaskDtl.Title" e-class="width500" onaftersave="updateTitle()">
+                                            <h4>{{ TaskDtl.Title || 'no title' }}</h4>
+                                        </a>
+
+                                        <div class="current" style="padding:0px">
+                                            <div class="pull-left">
+                                                <a buttons="no" editable-textarea="TaskDtl.Description" e-rows="5" e-cols="75" onaftersave="updateDesc()">
+                                                    <pre style="">{{ TaskDtl.Description || 'no description' }}</pre>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div ng-repeat="cmnt in myCommentList">
+                                    <div ng-class="['conversation-item',{'item-right': cmnt.UserId != userId },{'item-left': cmnt.UserId == userId},'clearfix']">
+                                        <div class="conversation-user">
+                                            <img ng-src="{{cmnt.ProfilePic}}" a alt="" />
+                                        </div>
+                                        <div class="conversation-body">
+                                            <div class="name">
+                                                {{cmnt.UserCmnt}}
+                                            </div>
+                                            <div class="time hidden-xs">
+                                                {{cmnt.EntryDate}}
+                                            </div>
+                                            <div class="text">
+                                                {{cmnt.Cmnt}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="conversation-new-message">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="hidden" ng-model="comment.tskid" />
+                                        <textarea class="form-control" ng-model="comment.Cmnt" rows="2" placeholder="Enter your message..."></textarea>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button type="button" class="btn btn-success pull-right" ng-click="putComment(comment)">Comment</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

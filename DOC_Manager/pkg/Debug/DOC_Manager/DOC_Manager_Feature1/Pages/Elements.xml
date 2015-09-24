@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\img\error-404-v2.png" Url="Pages/img/error-404-v2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\error-404-v3.png" Url="Pages/img/error-404-v3.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\error-500-v1.png" Url="Pages/img/error-500-v1.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\login-img.jpg" Url="Pages/img/login-img.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\login-img_2.jpg" Url="Pages/img/login-img_2.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\login-img_3.jpg" Url="Pages/img/login-img_3.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo-black - Copy.png" Url="Pages/img/logo-black - Copy.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo-black.png" Url="Pages/img/logo-black.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo-small - Copy.png" Url="Pages/img/logo-small - Copy.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo-small.png" Url="Pages/img/logo-small.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo - Copy.png" Url="Pages/img/logo - Copy.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo.png" Url="Pages/img/logo.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo.psd" Url="Pages/img/logo.psd" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo_.png" Url="Pages/img/logo_.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo1 - Copy.psd" Url="Pages/img/logo1 - Copy.psd" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo1.psd" Url="Pages/img/logo1.psd" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\1.jpg" Url="Pages/img/samples/1.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\10.png" Url="Pages/img/samples/10.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\11.png" Url="Pages/img/samples/11.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\12.png" Url="Pages/img/samples/12.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\13.png" Url="Pages/img/samples/13.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\14.png" Url="Pages/img/samples/14.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\2.jpg" Url="Pages/img/samples/2.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\3.jpg" Url="Pages/img/samples/3.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\4.jpg" Url="Pages/img/samples/4.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\5.jpg" Url="Pages/img/samples/5.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\6.jpg" Url="Pages/img/samples/6.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\7.jpg" Url="Pages/img/samples/7.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\8.jpg" Url="Pages/img/samples/8.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\9.jpg" Url="Pages/img/samples/9.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\angelina-300.jpg" Url="Pages/img/samples/angelina-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-img-2.png" Url="Pages/img/samples/email-sample-img-2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-img.png" Url="Pages/img/samples/email-sample-img.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-small-1.png" Url="Pages/img/samples/email-sample-small-1.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-small-180-3.png" Url="Pages/img/samples/email-sample-small-180-3.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-small-2.png" Url="Pages/img/samples/email-sample-small-2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-small-260-1.png" Url="Pages/img/samples/email-sample-small-260-1.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-small-260-2.png" Url="Pages/img/samples/email-sample-small-260-2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-sample-small-3.png" Url="Pages/img/samples/email-sample-small-3.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-template-1.png" Url="Pages/img/samples/email-template-1.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-template-2.png" Url="Pages/img/samples/email-template-2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-template-3.png" Url="Pages/img/samples/email-template-3.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\email-template-4.png" Url="Pages/img/samples/email-template-4.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\emma-300.jpg" Url="Pages/img/samples/emma-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\emma.png" Url="Pages/img/samples/emma.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\george.png" Url="Pages/img/samples/george.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\ipad.png" Url="Pages/img/samples/ipad.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\kunis-300.jpg" Url="Pages/img/samples/kunis-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\lima-300.jpg" Url="Pages/img/samples/lima-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\messages-photo-1.png" Url="Pages/img/samples/messages-photo-1.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\messages-photo-2.png" Url="Pages/img/samples/messages-photo-2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\messages-photo-3.png" Url="Pages/img/samples/messages-photo-3.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\miranda-560-300.png" Url="Pages/img/samples/miranda-560-300.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\robert-300.jpg" Url="Pages/img/samples/robert-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\robert.png" Url="Pages/img/samples/robert.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\ryan-300.jpg" Url="Pages/img/samples/ryan-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\scarlet-159.png" Url="Pages/img/samples/scarlet-159.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\scarlet.png" Url="Pages/img/samples/scarlet.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\scarlett-300.jpg" Url="Pages/img/samples/scarlett-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\tahiti-1.jpg" Url="Pages/img/samples/tahiti-1.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\tahiti-2.jpg" Url="Pages/img/samples/tahiti-2.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\tahiti-3.jpg" Url="Pages/img/samples/tahiti-3.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_1.jpg" Url="Pages/img/samples/hdr/img_1.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_2.jpg" Url="Pages/img/samples/hdr/img_2.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_3.jpg" Url="Pages/img/samples/hdr/img_3.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_4.jpg" Url="Pages/img/samples/hdr/img_4.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_5.jpg" Url="Pages/img/samples/hdr/img_5.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_6.jpg" Url="Pages/img/samples/hdr/img_6.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_7.jpg" Url="Pages/img/samples/hdr/img_7.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\img_8.jpg" Url="Pages/img/samples/hdr/img_8.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\small\img_5.jpg" Url="Pages/img/samples/hdr/small/img_5.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\small\img_8.jpg" Url="Pages/img/samples/hdr/small/img_8.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\xs\img_5.jpg" Url="Pages/img/samples/hdr/xs/img_5.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\xs\img_7.jpg" Url="Pages/img/samples/hdr/xs/img_7.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\samples\hdr\xs\img_8.jpg" Url="Pages/img/samples/hdr/xs/img_8.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\angelina-300.jpg" Url="Pages/img/users/angelina-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\emma-300.jpg" Url="Pages/img/users/emma-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\emma.png" Url="Pages/img/users/emma.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\george.png" Url="Pages/img/users/george.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\kunis-300.jpg" Url="Pages/img/users/kunis-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\kunis.png" Url="Pages/img/users/kunis.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\lima-300.jpg" Url="Pages/img/users/lima-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\messages-photo-1.png" Url="Pages/img/users/messages-photo-1.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\messages-photo-2.png" Url="Pages/img/users/messages-photo-2.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\messages-photo-3.png" Url="Pages/img/users/messages-photo-3.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\miranda-560-300.png" Url="Pages/img/users/miranda-560-300.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\robert-300.jpg" Url="Pages/img/users/robert-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\robert.png" Url="Pages/img/users/robert.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\ryan-300.jpg" Url="Pages/img/users/ryan-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\ryan.png" Url="Pages/img/users/ryan.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\scarlet-159.png" Url="Pages/img/users/scarlet-159.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\scarlet.png" Url="Pages/img/users/scarlet.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\users\scarlett-300.jpg" Url="Pages/img/users/scarlett-300.jpg" ReplaceContent="TRUE" />
+    <File Path="Pages\index.html" Url="Pages/index.html" ReplaceContent="TRUE" />
+    <File Path="Pages\img\warning.png" Url="Pages/img/warning.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\success.png" Url="Pages/img/success.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\info.png" Url="Pages/img/info.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\error.png" Url="Pages/img/error.png" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

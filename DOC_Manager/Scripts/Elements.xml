@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.map" Url="Scripts/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-local-storage.min.js" Url="Scripts/App/frameworks/angular-local-storage.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-resource.js" Url="Scripts/App/frameworks/angular-resource.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-route.min.js" Url="Scripts/App/frameworks/angular-route.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-sanitize.js" Url="Scripts/App/frameworks/angular-sanitize.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-strap.js" Url="Scripts/App/frameworks/angular-strap.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-strap.tpl.js" Url="Scripts/App/frameworks/angular-strap.tpl.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-wizard.js" Url="Scripts/App/frameworks/angular-wizard.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\authComplete.js" Url="Scripts/App/frameworks/authComplete.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\demo-rtl.js" Url="Scripts/App/frameworks/demo-rtl.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\loading-bar.js" Url="Scripts/App/frameworks/loading-bar.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngDialog.js" Url="Scripts/App/frameworks/ngDialog.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\angular-grid.css" Url="Scripts/App/frameworks/aggrid/angular-grid.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\angular-grid.js" Url="Scripts/App/frameworks/aggrid/angular-grid.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\angular-grid.min.css" Url="Scripts/App/frameworks/aggrid/angular-grid.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\angular-grid.min.js" Url="Scripts/App/frameworks/aggrid/angular-grid.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\theme-dark.css" Url="Scripts/App/frameworks/aggrid/theme-dark.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\theme-dark.min.css" Url="Scripts/App/frameworks/aggrid/theme-dark.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\theme-fresh.css" Url="Scripts/App/frameworks/aggrid/theme-fresh.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggrid\theme-fresh.min.css" Url="Scripts/App/frameworks/aggrid/theme-fresh.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\css\angular-wizard.css" Url="Scripts/App/frameworks/css/angular-wizard.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\css\ngDialog-custom-width.css" Url="Scripts/App/frameworks/css/ngDialog-custom-width.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\css\ngDialog-theme-default.css" Url="Scripts/App/frameworks/css/ngDialog-theme-default.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\css\ngDialog.css" Url="Scripts/App/frameworks/css/ngDialog.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngToast\angular-toastr.css" Url="Scripts/App/frameworks/ngToast/angular-toastr.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngToast\angular-toastr.js" Url="Scripts/App/frameworks/ngToast/angular-toastr.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngToast\angular-toastr.min.css" Url="Scripts/App/frameworks/ngToast/angular-toastr.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngToast\angular-toastr.min.js" Url="Scripts/App/frameworks/ngToast/angular-toastr.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngToast\angular-toastr.tpls.js" Url="Scripts/App/frameworks/ngToast/angular-toastr.tpls.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ngToast\angular-toastr.tpls.min.js" Url="Scripts/App/frameworks/ngToast/angular-toastr.tpls.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular.min.js" Url="Scripts/App/frameworks/angular.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-animate.js" Url="Scripts/App/frameworks/angular-animate.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\angular-file-upload.js" Url="Scripts/App/frameworks/angular-file-upload.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\modules\app.js" Url="Scripts/App/modules/app.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\configs\config.js" Url="Scripts/App/configs/config.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Document\FileList.js" Url="Scripts/App/controllers/Document/FileList.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\services\baseSvc.js" Url="Scripts/App/services/baseSvc.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\services\user\userSvc.js" Url="Scripts/App/services/user/userSvc.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\mainCtrl.js" Url="Scripts/App/controllers/mainCtrl.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ChromeLoader.js" Url="Scripts/ChromeLoader.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\configs\config.exceptionHandeler.js" Url="Scripts/App/configs/config.exceptionHandeler.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\common\common.js" Url="Scripts/App/common/common.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\common\logger.js" Url="Scripts/App/common/logger.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-extensions.js" Url="Scripts/jquery-extensions.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\layout\spAppChrome.js" Url="Scripts/App/controllers/layout/spAppChrome.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Task\AllTask.js" Url="Scripts/App/controllers/Task/AllTask.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Task\AddTask.js" Url="Scripts/App/controllers/Task/AddTask.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Task\DashBoard.js" Url="Scripts/App/controllers/Task/DashBoard.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Task\DeleteTask.js" Url="Scripts/App/controllers/Task/DeleteTask.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Task\MyTask.js" Url="Scripts/App/controllers/Task/MyTask.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Task\UpdateTask.js" Url="Scripts/App/controllers/Task/UpdateTask.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\parse-options.js" Url="Scripts/App/frameworks/parse-options.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\xeditable\css\xeditable.css" Url="Scripts/App/frameworks/xeditable/css/xeditable.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\xeditable\js\xeditable.js" Url="Scripts/App/frameworks/xeditable/js/xeditable.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\xeditable\js\xeditable.min.js" Url="Scripts/App/frameworks/xeditable/js/xeditable.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\services\task\taskSvc.js" Url="Scripts/App/services/task/taskSvc.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Content\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="js\bootstrap.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\demo-rtl.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\demo-skin-changer.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\demo.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\jquery.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\jquery.nanoscroller.min.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\jquery.slimscroll.min.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\lodash.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\scripts.js" Target="Content\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\del\jquery.sparkline.min.js" Target="Content\js\del\" Type="ElementFile" />
+    <ProjectItemFile Source="css\angular.css" Target="Content\css\" Type="ElementFile" />
+    <ProjectItemFile Source="css\loading-bar.css" Target="Content\css\" Type="ElementFile" />
+    <ProjectItemFile Source="css\angular\angular-motion.css" Target="Content\css\angular\" Type="ElementFile" />
+    <ProjectItemFile Source="css\angular\old_angular-motion.css" Target="Content\css\angular\" Type="ElementFile" />
+    <ProjectItemFile Source="css\bootstrap\bootstrap.min.css" Target="Content\css\bootstrap\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme-amethyst.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme-blue.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme-red.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme-turquoise.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme-whbl.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme-white.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\compiled\theme_styles.css" Target="Content\css\compiled\" Type="ElementFile" />
+    <ProjectItemFile Source="css\libs\font-awesome.css" Target="Content\css\libs\" Type="ElementFile" />
+    <ProjectItemFile Source="css\libs\font-awesome.min.css" Target="Content\css\libs\" Type="ElementFile" />
+    <ProjectItemFile Source="css\libs\nanoscroller.css" Target="Content\css\libs\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\fontawesome-webfont.eot" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\fontawesome-webfont.svg" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\fontawesome-webfont.ttf" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\fontawesome-webfont.woff" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\fontawesome-webfont.woff2" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\FontAwesome.otf" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\weathericons-regular-webfont.eot" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\weathericons-regular-webfont.svg" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\weathericons-regular-webfont.ttf" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\weathericons-regular-webfont.woff" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\WeatherIcons-Regular.otf" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="img\whitey.jpg" Target="Content\img\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

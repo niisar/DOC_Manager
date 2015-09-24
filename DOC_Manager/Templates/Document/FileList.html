@@ -1,0 +1,48 @@
+﻿<div data-ng-controller="Document.FileList">
+    <div class="row">
+        <div class="col-lg-12">
+            <ol class="breadcrumb breadcrumbStyl1">
+                <li><a href="">Home</a></li>
+                <li class="active"><span>{{template.name}}</span></li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="main-box clearfix">
+                <header class="main-box-header clearfix">
+                    <h2 class="pull-left">{{template.name}}</h2>
+                    <div class="filter-block pull-right">
+                        <div class="form-group pull-left">
+                            <input type="text" class="form-control" ng-lazy-show="tabs.activeTab == 0" ng-model="CheckedIn.quickFilterText" placeholder="Search...">
+
+                            <i class="fa fa-search search-icon"></i>
+                        </div>
+
+                        <div class="form-group pull-left">
+                            <a href="" class="btn btn-primary " ng-click="template = templates[1]">
+                                New Visitors
+                            </a>
+                        </div>
+                        <div class="btn-group pull-right">
+
+                            <a class="btn btn-link2" ng-click="template = templates[0]">
+                                <i class="fa fa-th"></i>
+                            </a>
+                            <a href="" ng-click="GetCheckedIn()" class="btn btn-link2">
+                                <i class="fa fa-file-excel-o"></i>
+                            </a>
+                            <a href="" class="btn btn-link2">
+                                <i class="fa fa-file-pdf-o"></i>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="main-box-body clearfix" ng-include="template.url">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

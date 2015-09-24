@@ -1,0 +1,37 @@
+﻿/*#region style fix*/
+/*This is used hide sharepoint header when crome js is not applied*/
+#contentRow, #contentBox {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#s4-ribbonrow, #suiteBar, #s4-titlerow {
+    display: none !important;
+}
+
+a.btn:visited {
+    color: #000;
+}
+
+a.btn-link2:visited {
+    color: #000;
+}
+
+body.v4master {
+    overflow-y: auto;
+}
+/*#endregion*/
+
+.conversation-wrapper {
+    padding: 0px 10px 10px 10px !important;
+}
+
+.main-box h4 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.width500 {
+    width: 500px !important;
+    margin-bottom: 5px !important;
+}

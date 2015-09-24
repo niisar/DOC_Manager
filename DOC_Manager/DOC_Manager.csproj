@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E95D94F4-73B8-48AA-B49B-0706439DFC62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOC_Manager</RootNamespace>
+    <AssemblyName>DOC_Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>11.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{004acc8b-fa5b-4c71-9590-009131f6e04e}</AppFeaturePartId>
+    <WspPartId>{d81c1986-ceda-48a2-a738-6cff746ee4a4}</WspPartId>
+    <WorkflowPartId>{2aba44f1-6139-4227-83da-72f01bcc2be2}</WorkflowPartId>
+    <CspkgPartId>{6aef3e6a-f1dc-49c6-8a92-d3ba9af78253}</CspkgPartId>
+    <SqlPackagePartId>{f7b210ca-5726-42d3-b361-24ec4c5a055d}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="asana.tt\asana.ttInstance\Elements.xml" />
+    <Content Include="asana.tt\Elements.xml" />
+    <Content Include="asana.tt\Schema.xml" />
+    <Content Include="Content\css\angular.css" />
+    <Content Include="Content\css\angular\angular-motion.css" />
+    <Content Include="Content\css\angular\old_angular-motion.css" />
+    <Content Include="Content\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\css\compiled\theme-amethyst.css" />
+    <Content Include="Content\css\compiled\theme-blue.css" />
+    <Content Include="Content\css\compiled\theme-red.css" />
+    <Content Include="Content\css\compiled\theme-turquoise.css" />
+    <Content Include="Content\css\compiled\theme-whbl.css" />
+    <Content Include="Content\css\compiled\theme-white.css" />
+    <Content Include="Content\css\compiled\theme_styles.css" />
+    <Content Include="Content\css\libs\font-awesome.css" />
+    <Content Include="Content\css\libs\font-awesome.min.css" />
+    <Content Include="Content\css\libs\nanoscroller.css" />
+    <Content Include="Content\css\loading-bar.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Pages\img\error.png" />
+    <Content Include="Pages\img\info.png" />
+    <Content Include="Pages\img\success.png" />
+    <Content Include="Pages\img\warning.png" />
+    <Content Include="Pages\img\error-404-v2.png" />
+    <Content Include="Pages\img\error-404-v3.png" />
+    <Content Include="Pages\img\error-500-v1.png" />
+    <Content Include="Pages\img\login-img.jpg" />
+    <Content Include="Pages\img\login-img_2.jpg" />
+    <Content Include="Pages\img\login-img_3.jpg" />
+    <Content Include="Pages\img\logo - Copy.png" />
+    <Content Include="Pages\img\logo-black - Copy.png" />
+    <Content Include="Pages\img\logo-black.png" />
+    <Content Include="Pages\img\logo-small - Copy.png" />
+    <Content Include="Pages\img\logo-small.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Pages\img\logo.png" />
+    <Content Include="Pages\img\logo_.png" />
+    <Content Include="Pages\img\samples\1.jpg" />
+    <Content Include="Pages\img\samples\10.png" />
+    <Content Include="Pages\img\samples\11.png" />
+    <Content Include="Pages\img\samples\12.png" />
+    <Content Include="Pages\img\samples\13.png" />
+    <Content Include="Pages\img\samples\14.png" />
+    <Content Include="Pages\img\samples\2.jpg" />
+    <Content Include="Pages\img\samples\3.jpg" />
+    <Content Include="Pages\img\samples\4.jpg" />
+    <Content Include="Pages\img\samples\5.jpg" />
+    <Content Include="Pages\img\samples\6.jpg" />
+    <Content Include="Pages\img\samples\7.jpg" />
+    <Content Include="Pages\img\samples\8.jpg" />
+    <Content Include="Pages\img\samples\9.jpg" />
+    <Content Include="Pages\img\samples\angelina-300.jpg" />
+    <Content Include="Pages\img\samples\email-sample-img-2.png" />
+    <Content Include="Pages\img\samples\email-sample-img.png" />
+    <Content Include="Pages\img\samples\email-sample-small-1.png" />
+    <Content Include="Pages\img\samples\email-sample-small-180-3.png" />
+    <Content Include="Pages\img\samples\email-sample-small-2.png" />
+    <Content Include="Pages\img\samples\email-sample-small-260-1.png" />
+    <Content Include="Pages\img\samples\email-sample-small-260-2.png" />
+    <Content Include="Pages\img\samples\email-sample-small-3.png" />
+    <Content Include="Pages\img\samples\email-template-1.png" />
+    <Content Include="Pages\img\samples\email-template-2.png" />
+    <Content Include="Pages\img\samples\email-template-3.png" />
+    <Content Include="Pages\img\samples\email-template-4.png" />
+    <Content Include="Pages\img\samples\emma-300.jpg" />
+    <Content Include="Pages\img\samples\emma.png" />
+    <Content Include="Pages\img\samples\george.png" />
+    <Content Include="Pages\img\samples\hdr\img_1.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_2.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_3.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_4.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_5.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_6.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_7.jpg" />
+    <Content Include="Pages\img\samples\hdr\img_8.jpg" />
+    <Content Include="Pages\img\samples\hdr\small\img_5.jpg" />
+    <Content Include="Pages\img\samples\hdr\small\img_8.jpg" />
+    <Content Include="Pages\img\samples\hdr\xs\img_5.jpg" />
+    <Content Include="Pages\img\samples\hdr\xs\img_7.jpg" />
+    <Content Include="Pages\img\samples\hdr\xs\img_8.jpg" />
+    <Content Include="Pages\img\samples\ipad.png" />
+    <Content Include="Pages\img\samples\kunis-300.jpg" />
+    <Content Include="Pages\img\samples\lima-300.jpg" />
+    <Content Include="Pages\img\samples\messages-photo-1.png" />
+    <Content Include="Pages\img\samples\messages-photo-2.png" />
+    <Content Include="Pages\img\samples\messages-photo-3.png" />
+    <Content Include="Pages\img\samples\miranda-560-300.png" />
+    <Content Include="Pages\img\samples\robert-300.jpg" />
+    <Content Include="Pages\img\samples\robert.png" />
+    <Content Include="Pages\img\samples\ryan-300.jpg" />
+    <Content Include="Pages\img\samples\scarlet-159.png" />
+    <Content Include="Pages\img\samples\scarlet.png" />
+    <Content Include="Pages\img\samples\scarlett-300.jpg" />
+    <Content Include="Pages\img\samples\tahiti-1.jpg" />
+    <Content Include="Pages\img\samples\tahiti-2.jpg" />
+    <Content Include="Pages\img\samples\tahiti-3.jpg" />
+    <Content Include="Pages\img\users\angelina-300.jpg" />
+    <Content Include="Pages\img\users\emma-300.jpg" />
+    <Content Include="Pages\img\users\emma.png" />
+    <Content Include="Pages\img\users\george.png" />
+    <Content Include="Pages\img\users\kunis-300.jpg" />
+    <Content Include="Pages\img\users\kunis.png" />
+    <Content Include="Pages\img\users\lima-300.jpg" />
+    <Content Include="Pages\img\users\messages-photo-1.png" />
+    <Content Include="Pages\img\users\messages-photo-2.png" />
+    <Content Include="Pages\img\users\messages-photo-3.png" />
+    <Content Include="Pages\img\users\miranda-560-300.png" />
+    <Content Include="Pages\img\users\robert-300.jpg" />
+    <Content Include="Pages\img\users\robert.png" />
+    <Content Include="Pages\img\users\ryan-300.jpg" />
+    <Content Include="Pages\img\users\ryan.png" />
+    <Content Include="Pages\img\users\scarlet-159.png" />
+    <Content Include="Pages\img\users\scarlet.png" />
+    <Content Include="Pages\img\users\scarlett-300.jpg" />
+    <Content Include="Content\img\whitey.jpg" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\del\jquery.sparkline.min.js" />
+    <Content Include="Content\js\demo-rtl.js" />
+    <Content Include="Content\js\demo-skin-changer.js" />
+    <Content Include="Content\js\demo.js" />
+    <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\jquery.nanoscroller.min.js" />
+    <Content Include="Content\js\jquery.slimscroll.min.js" />
+    <Content Include="Content\js\lodash.js" />
+    <Content Include="Content\js\scripts.js" />
+    <Content Include="Pages\index.html" />
+    <Content Include="Scripts\App\common\logger.js" />
+    <Content Include="Scripts\App\common\common.js" />
+    <Content Include="Scripts\App\configs\config.js" />
+    <Content Include="Scripts\App\configs\config.exceptionHandeler.js" />
+    <Content Include="Scripts\App\controllers\Document\FileList.js" />
+    <Content Include="Scripts\App\controllers\Task\DashBoard.js" />
+    <Content Include="Scripts\App\controllers\Task\DeleteTask.js" />
+    <Content Include="Scripts\App\controllers\Task\MyTask.js" />
+    <Content Include="Scripts\App\controllers\Task\UpdateTask.js" />
+    <Content Include="Scripts\App\controllers\Task\AddTask.js" />
+    <Content Include="Scripts\App\controllers\Task\AllTask.js" />
+    <Content Include="Scripts\App\frameworks\parse-options.js" />
+    <Content Include="Scripts\App\frameworks\xeditable\css\xeditable.css" />
+    <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.js" />
+    <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.min.js" />
+    <Content Include="Scripts\App\services\task\taskSvc.js" />
+    <Content Include="Templates\layout\spAppChrome.html" />
+    <Content Include="Scripts\App\controllers\layout\spAppChrome.js" />
+    <Content Include="Scripts\App\controllers\mainCtrl.js" />
+    <Content Include="Scripts\App\services\baseSvc.js" />
+    <Content Include="Scripts\App\services\user\userSvc.js" />
+    <Content Include="Scripts\ChromeLoader.js" />
+    <Content Include="Scripts\jquery-extensions.js" />
+    <Content Include="Templates\Common\Footer.html" />
+    <Content Include="Templates\Document\FileList.html" />
+    <Content Include="Templates\Task\AddTask.html" />
+    <Content Include="Templates\Task\DashBoard.html" />
+    <Content Include="Templates\Task\DeleteTask.html" />
+    <Content Include="Templates\Task\UpdateTask.html" />
+    <Content Include="Templates\Task\MyTask.html" />
+    <Content Include="Templates\Task\AllTask.html" />
+    <None Include="asana.tt\asana.ttInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a32b407-db3c-404e-b895-9635021a64f2}</SharePointProjectItemId>
+    </None>
+    <None Include="asana.tt\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9bc20f91-543f-4c15-add0-baf7c6b0b2af}</SharePointProjectItemId>
+    </None>
+    <None Include="Content\fonts\fontawesome-webfont.eot" />
+    <None Include="Content\fonts\fontawesome-webfont.ttf" />
+    <None Include="Content\fonts\fontawesome-webfont.woff" />
+    <None Include="Content\fonts\fontawesome-webfont.woff2" />
+    <None Include="Content\fonts\FontAwesome.otf" />
+    <None Include="Content\fonts\weathericons-regular-webfont.eot" />
+    <None Include="Content\fonts\weathericons-regular-webfont.ttf" />
+    <None Include="Content\fonts\weathericons-regular-webfont.woff" />
+    <None Include="Content\fonts\WeatherIcons-Regular.otf" />
+    <None Include="Pages\img\logo.psd" />
+    <None Include="Pages\img\logo1 - Copy.psd" />
+    <None Include="Pages\img\logo1.psd" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f368440f-5264-49a0-bbe5-2fae16147224}</SharePointProjectItemId>
+    </None>
+    <Content Include="Elements.xml" />
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Default.aspx" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ca8edf7-13cd-4010-8d46-5bbc3170b811}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f7b210ca-5726-42d3-b361-24ec4c5a055d}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\App\frameworks\aggrid\angular-grid.css" />
+    <Content Include="Scripts\App\frameworks\aggrid\angular-grid.js" />
+    <Content Include="Scripts\App\frameworks\aggrid\angular-grid.min.css" />
+    <Content Include="Scripts\App\frameworks\aggrid\angular-grid.min.js" />
+    <Content Include="Scripts\App\frameworks\aggrid\theme-dark.css" />
+    <Content Include="Scripts\App\frameworks\aggrid\theme-dark.min.css" />
+    <Content Include="Scripts\App\frameworks\aggrid\theme-fresh.css" />
+    <Content Include="Scripts\App\frameworks\aggrid\theme-fresh.min.css" />
+    <Content Include="Scripts\App\frameworks\angular-animate.js" />
+    <Content Include="Scripts\App\frameworks\angular-file-upload.js" />
+    <Content Include="Scripts\App\frameworks\angular-local-storage.min.js" />
+    <Content Include="Scripts\App\frameworks\angular-resource.js" />
+    <Content Include="Scripts\App\frameworks\angular-route.min.js" />
+    <Content Include="Scripts\App\frameworks\angular-sanitize.js" />
+    <Content Include="Scripts\App\frameworks\angular-strap.js" />
+    <Content Include="Scripts\App\frameworks\angular-strap.tpl.js" />
+    <Content Include="Scripts\App\frameworks\angular-wizard.js" />
+    <Content Include="Scripts\App\frameworks\angular.min.js" />
+    <Content Include="Scripts\App\frameworks\authComplete.js" />
+    <Content Include="Scripts\App\frameworks\css\angular-wizard.css" />
+    <Content Include="Scripts\App\frameworks\css\ngDialog-custom-width.css" />
+    <Content Include="Scripts\App\frameworks\css\ngDialog-theme-default.css" />
+    <Content Include="Scripts\App\frameworks\css\ngDialog.css" />
+    <Content Include="Scripts\App\frameworks\demo-rtl.js" />
+    <Content Include="Scripts\App\frameworks\loading-bar.js" />
+    <Content Include="Scripts\App\frameworks\ngDialog.js" />
+    <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.css" />
+    <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.js" />
+    <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.min.css" />
+    <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.min.js" />
+    <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.tpls.js" />
+    <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.tpls.min.js" />
+    <Content Include="Scripts\App\modules\app.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{021d2a73-45f5-4768-81c7-51bd6ab1543d}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png" />
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e0ffc58c-aaa7-4171-9f4b-6ad7edb3a254}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{683e816f-afca-4dce-83de-f524401cab1e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{b7a1b550-7d69-44e5-b1f5-6891a704c6ac}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\App\common\images\" />
+    <Folder Include="Scripts\App\directives\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

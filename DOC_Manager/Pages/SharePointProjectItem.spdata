@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Default.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="img\error-404-v2.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\error-404-v3.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\error-500-v1.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\login-img.jpg" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\login-img_2.jpg" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\login-img_3.jpg" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo-black - Copy.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo-black.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo-small - Copy.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo-small.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo - Copy.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo.psd" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo_.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo1 - Copy.psd" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo1.psd" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\1.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\10.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\11.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\12.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\13.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\14.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\2.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\3.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\4.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\5.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\6.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\7.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\8.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\9.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\angelina-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-img-2.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-img.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-small-1.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-small-180-3.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-small-2.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-small-260-1.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-small-260-2.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-sample-small-3.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-template-1.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-template-2.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-template-3.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\email-template-4.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\emma-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\emma.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\george.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\ipad.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\kunis-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\lima-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\messages-photo-1.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\messages-photo-2.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\messages-photo-3.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\miranda-560-300.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\robert-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\robert.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\ryan-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\scarlet-159.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\scarlet.png" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\scarlett-300.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\tahiti-1.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\tahiti-2.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\tahiti-3.jpg" Target="Pages\img\samples\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_1.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_2.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_3.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_4.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_5.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_6.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_7.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\img_8.jpg" Target="Pages\img\samples\hdr\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\small\img_5.jpg" Target="Pages\img\samples\hdr\small\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\small\img_8.jpg" Target="Pages\img\samples\hdr\small\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\xs\img_5.jpg" Target="Pages\img\samples\hdr\xs\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\xs\img_7.jpg" Target="Pages\img\samples\hdr\xs\" Type="ElementFile" />
+    <ProjectItemFile Source="img\samples\hdr\xs\img_8.jpg" Target="Pages\img\samples\hdr\xs\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\angelina-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\emma-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\emma.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\george.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\kunis-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\kunis.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\lima-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\messages-photo-1.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\messages-photo-2.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\messages-photo-3.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\miranda-560-300.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\robert-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\robert.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\ryan-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\ryan.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\scarlet-159.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\scarlet.png" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="img\users\scarlett-300.jpg" Target="Pages\img\users\" Type="ElementFile" />
+    <ProjectItemFile Source="index.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="img\warning.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\success.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\info.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\error.png" Target="Pages\img\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

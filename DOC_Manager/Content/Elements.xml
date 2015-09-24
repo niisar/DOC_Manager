@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\js\bootstrap.js" Url="Content/js/bootstrap.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\demo-rtl.js" Url="Content/js/demo-rtl.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\demo-skin-changer.js" Url="Content/js/demo-skin-changer.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\demo.js" Url="Content/js/demo.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\jquery.js" Url="Content/js/jquery.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\jquery.nanoscroller.min.js" Url="Content/js/jquery.nanoscroller.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\jquery.slimscroll.min.js" Url="Content/js/jquery.slimscroll.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\lodash.js" Url="Content/js/lodash.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\scripts.js" Url="Content/js/scripts.js" ReplaceContent="TRUE" />
+    <File Path="Content\js\del\jquery.sparkline.min.js" Url="Content/js/del/jquery.sparkline.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\css\angular.css" Url="Content/css/angular.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\loading-bar.css" Url="Content/css/loading-bar.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\angular\angular-motion.css" Url="Content/css/angular/angular-motion.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\angular\old_angular-motion.css" Url="Content/css/angular/old_angular-motion.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\bootstrap\bootstrap.min.css" Url="Content/css/bootstrap/bootstrap.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme-amethyst.css" Url="Content/css/compiled/theme-amethyst.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme-blue.css" Url="Content/css/compiled/theme-blue.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme-red.css" Url="Content/css/compiled/theme-red.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme-turquoise.css" Url="Content/css/compiled/theme-turquoise.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme-whbl.css" Url="Content/css/compiled/theme-whbl.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme-white.css" Url="Content/css/compiled/theme-white.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\compiled\theme_styles.css" Url="Content/css/compiled/theme_styles.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\libs\font-awesome.css" Url="Content/css/libs/font-awesome.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\libs\font-awesome.min.css" Url="Content/css/libs/font-awesome.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\css\libs\nanoscroller.css" Url="Content/css/libs/nanoscroller.css" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\fontawesome-webfont.eot" Url="Content/fonts/fontawesome-webfont.eot" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\fontawesome-webfont.svg" Url="Content/fonts/fontawesome-webfont.svg" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\fontawesome-webfont.ttf" Url="Content/fonts/fontawesome-webfont.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\fontawesome-webfont.woff" Url="Content/fonts/fontawesome-webfont.woff" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\fontawesome-webfont.woff2" Url="Content/fonts/fontawesome-webfont.woff2" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\FontAwesome.otf" Url="Content/fonts/FontAwesome.otf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\weathericons-regular-webfont.eot" Url="Content/fonts/weathericons-regular-webfont.eot" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\weathericons-regular-webfont.svg" Url="Content/fonts/weathericons-regular-webfont.svg" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\weathericons-regular-webfont.ttf" Url="Content/fonts/weathericons-regular-webfont.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\weathericons-regular-webfont.woff" Url="Content/fonts/weathericons-regular-webfont.woff" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\WeatherIcons-Regular.otf" Url="Content/fonts/WeatherIcons-Regular.otf" ReplaceContent="TRUE" />
+    <File Path="Content\img\whitey.jpg" Url="Content/img/whitey.jpg" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="Templates\Document\FileList.html" Url="Templates/Document/FileList.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Common\Footer.html" Url="Templates/Common/Footer.html" ReplaceContent="TRUE" />
+    <File Path="Templates\layout\spAppChrome.html" Url="Templates/layout/spAppChrome.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Task\AllTask.html" Url="Templates/Task/AllTask.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Task\MyTask.html" Url="Templates/Task/MyTask.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Task\UpdateTask.html" Url="Templates/Task/UpdateTask.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Task\DeleteTask.html" Url="Templates/Task/DeleteTask.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Task\DashBoard.html" Url="Templates/Task/DashBoard.html" ReplaceContent="TRUE" />
+    <File Path="Templates\Task\AddTask.html" Url="Templates/Task/AddTask.html" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

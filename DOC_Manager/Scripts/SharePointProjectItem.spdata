@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-local-storage.min.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-resource.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-route.min.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-sanitize.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-strap.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-strap.tpl.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-wizard.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\authComplete.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\demo-rtl.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\loading-bar.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngDialog.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\angular-grid.css" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\angular-grid.js" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\angular-grid.min.css" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\angular-grid.min.js" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\theme-dark.css" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\theme-dark.min.css" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\theme-fresh.css" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggrid\theme-fresh.min.css" Target="Scripts\App\frameworks\aggrid\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\css\angular-wizard.css" Target="Scripts\App\frameworks\css\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\css\ngDialog-custom-width.css" Target="Scripts\App\frameworks\css\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\css\ngDialog-theme-default.css" Target="Scripts\App\frameworks\css\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\css\ngDialog.css" Target="Scripts\App\frameworks\css\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngToast\angular-toastr.css" Target="Scripts\App\frameworks\ngToast\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngToast\angular-toastr.js" Target="Scripts\App\frameworks\ngToast\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngToast\angular-toastr.min.css" Target="Scripts\App\frameworks\ngToast\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngToast\angular-toastr.min.js" Target="Scripts\App\frameworks\ngToast\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngToast\angular-toastr.tpls.js" Target="Scripts\App\frameworks\ngToast\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ngToast\angular-toastr.tpls.min.js" Target="Scripts\App\frameworks\ngToast\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular.min.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-animate.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-file-upload.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\modules\app.js" Target="Scripts\App\modules\" Type="ElementFile" />
+    <ProjectItemFile Source="App\configs\config.js" Target="Scripts\App\configs\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Document\FileList.js" Target="Scripts\App\controllers\Document\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\baseSvc.js" Target="Scripts\App\services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\user\userSvc.js" Target="Scripts\App\services\user\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\mainCtrl.js" Target="Scripts\App\controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="ChromeLoader.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="App\configs\config.exceptionHandeler.js" Target="Scripts\App\configs\" Type="ElementFile" />
+    <ProjectItemFile Source="App\common\common.js" Target="Scripts\App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="App\common\logger.js" Target="Scripts\App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-extensions.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\layout\spAppChrome.js" Target="Scripts\App\controllers\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Task\AllTask.js" Target="Scripts\App\controllers\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Task\AddTask.js" Target="Scripts\App\controllers\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Task\DashBoard.js" Target="Scripts\App\controllers\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Task\DeleteTask.js" Target="Scripts\App\controllers\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Task\MyTask.js" Target="Scripts\App\controllers\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Task\UpdateTask.js" Target="Scripts\App\controllers\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\parse-options.js" Target="Scripts\App\frameworks\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\xeditable\css\xeditable.css" Target="Scripts\App\frameworks\xeditable\css\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\xeditable\js\xeditable.js" Target="Scripts\App\frameworks\xeditable\js\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\xeditable\js\xeditable.min.js" Target="Scripts\App\frameworks\xeditable\js\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\task\taskSvc.js" Target="Scripts\App\services\task\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

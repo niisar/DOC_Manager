@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="Templates\Document\FileList.html" Target="Templates\Document\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Common\Footer.html" Target="Templates\Common\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\layout\spAppChrome.html" Target="Templates\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Task\AllTask.html" Target="Templates\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Task\MyTask.html" Target="Templates\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Task\UpdateTask.html" Target="Templates\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Task\DeleteTask.html" Target="Templates\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Task\DashBoard.html" Target="Templates\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Task\AddTask.html" Target="Templates\Task\" Type="ElementFile" />
+  </Files>
+</ProjectItem>
