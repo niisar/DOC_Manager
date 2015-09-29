@@ -62,5 +62,6 @@
     <ProjectItemFile Source="App\frameworks\xeditable\js\xeditable.js" Target="Scripts\App\frameworks\xeditable\js\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\xeditable\js\xeditable.min.js" Target="Scripts\App\frameworks\xeditable\js\" Type="ElementFile" />
     <ProjectItemFile Source="App\services\task\taskSvc.js" Target="Scripts\App\services\task\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Claim\Claim.js" Target="Scripts\App\controllers\Claim\" Type="ElementFile" />
   </Files>
 </ProjectItem>

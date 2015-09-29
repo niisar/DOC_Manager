@@ -61,5 +61,6 @@
     <File Path="Scripts\App\frameworks\xeditable\js\xeditable.js" Url="Scripts/App/frameworks/xeditable/js/xeditable.js" ReplaceContent="TRUE" />
     <File Path="Scripts\App\frameworks\xeditable\js\xeditable.min.js" Url="Scripts/App/frameworks/xeditable/js/xeditable.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\App\services\task\taskSvc.js" Url="Scripts/App/services/task/taskSvc.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Claim\Claim.js" Url="Scripts/App/controllers/Claim/Claim.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

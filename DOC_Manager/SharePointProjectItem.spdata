@@ -11,5 +11,11 @@
     <ProjectItemFile Source="Templates\Task\DeleteTask.html" Target="Templates\Task\" Type="ElementFile" />
     <ProjectItemFile Source="Templates\Task\DashBoard.html" Target="Templates\Task\" Type="ElementFile" />
     <ProjectItemFile Source="Templates\Task\AddTask.html" Target="Templates\Task\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Claim\Dashboard.html" Target="Templates\Claim\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Claim\ClaimTemplates.html" Target="Templates\Claim\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Claim\ClaimNew.html" Target="Templates\Claim\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Claim\ClaimDashbord.html" Target="Templates\Claim\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Claim\ClaimPreview.html" Target="Templates\Claim\" Type="ElementFile" />
+    <ProjectItemFile Source="Templates\Claim\ClaimFinal.html" Target="Templates\Claim\" Type="ElementFile" />
   </Files>
 </ProjectItem>

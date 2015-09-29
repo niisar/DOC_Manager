@@ -193,6 +193,12 @@
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.js" />
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.min.js" />
     <Content Include="Scripts\App\services\task\taskSvc.js" />
+    <Content Include="Templates\Claim\ClaimFinal.html" />
+    <Content Include="Templates\Claim\ClaimPreview.html" />
+    <Content Include="Templates\Claim\ClaimDashbord.html" />
+    <Content Include="Templates\Claim\ClaimNew.html" />
+    <Content Include="Templates\Claim\ClaimTemplates.html" />
+    <Content Include="Templates\Claim\Dashboard.html" />
     <Content Include="Templates\layout\spAppChrome.html" />
     <Content Include="Scripts\App\controllers\layout\spAppChrome.js" />
     <Content Include="Scripts\App\controllers\mainCtrl.js" />
