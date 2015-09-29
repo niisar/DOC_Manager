@@ -22,6 +22,8 @@
                 Desc2: tsk.Description,
                 AssignedTo: tsk.AssignedUserId.toString()
             };
+
+            //console.log(tsk.AssignedUserId);
             var url = listEndPoint + "GetByTitle('Asana2')/Items";
             return baseService.postRequest(data, url);
         };

@@ -4,7 +4,7 @@
     app.factory("taskSvc", ["baseSvc", function (baseService) {
         var listEndPoint = '/_api/web/lists/';
         var getAll = function () {
-            var query = listEndPoint + "GetByTitle('Asana2')/Items?$select=Title,Category,ID,PriorityCod,Desc2";
+            var query = listEndPoint + "GetByTitle('Asana2')/Items?$select=Title,Category,ID,PriorityCod,Desc2&$filter=Status ne 'compleated'";
             return baseService.getRequest(query);
         };
 
@@ -70,6 +70,15 @@
             return baseService.updateRequest(data, url);
         };
 
+        var compleateTask = function (ID) {
+            var data = {
+                __metadata: { 'type': 'SP.Data.Asana2ListItem' },
+                Status: 'compleated',
+            };
+            var url = listEndPoint + "/GetByTitle('Asana2')/GetItemById(" + ID + ")";
+            return baseService.updateRequest(data, url);
+        };
+
 
         var addNewActivities = function (comment) {
             var data = {
@@ -96,7 +105,8 @@
             updatePriority: updatePriority,
             updateCategory: updateCategory,
             updateDesc: updateDesc,
-            updateTitle: updateTitle
+            updateTitle: updateTitle,
+            compleateTask: compleateTask
         };
 
 

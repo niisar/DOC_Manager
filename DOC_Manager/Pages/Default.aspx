@@ -5,16 +5,16 @@
 <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
-  
+
     <meta name="WebPartPageExpansion" content="full" />
-    
+
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../Scripts/jquery-extensions.js"></script>
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
     <script type="text/javascript" src="/_layouts/15/SP.UI.Controls.js"></script>
-    
+
     <script type="text/javascript" src="/_layouts/15/core.js"></script>
 
     <script src="../Scripts/ChromeLoader.js"></script>
@@ -89,10 +89,10 @@
 
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
     <div data-ng-app="docapp" data-ng-controller="mainCtrl" class="v4master">
-    <div data-ng-include="'../Templates/layout/spAppChrome.html'"></div>
+        <div data-ng-include="'../Templates/layout/spAppChrome.html'"></div>
 
-    <div id="theme-wrapper">
-        <header class="navbar" id="header-navbar">
+        <div id="theme-wrapper">
+            <header class="navbar" id="header-navbar">
             <div class="container">
                 <a href="#/dasboard" id="logo" class="navbar-brand">
                     <img src="img/logo.png" alt="" class="normal-logo logo-white" />
@@ -209,10 +209,10 @@
                     </div>
                 </div>
         </header>
-        <div id="page-wrapper" class="container">
-            <div class="row">
-                <div id="nav-col">
-                    <section id="col-left" class="col-left-nano">
+            <div id="page-wrapper" class="container">
+                <div class="row">
+                    <div id="nav-col">
+                        <section id="col-left" class="col-left-nano">
                         <div id="col-left-inner" class="col-left-nano-content">
                             <div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
                                 <img src="img/users/ryan-300.jpg" />
@@ -266,7 +266,12 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    <li class="active" data-match-route="/CMS">
+                                        <a href="#/CMS_Master">
+                                            <i class="fa fa-dashboard"></i>
+                                            <span>Claims</span>
+                                        </a>
+                                    </li>
                                     <li data-match-route="/lobby*">
                                         <a href="" class="dropdown-toggle">
                                             <i class="fa fa-user"></i>
@@ -311,23 +316,23 @@
                             </div>
                         </div>
                     </section>
-                    <div id="nav-col-submenu"></div>
-                </div>
-                <div id="content-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="slide-main-container">
-                                <div ng-view autoscroll="true" class="slide-main-animation"></div>
+                        <div id="nav-col-submenu"></div>
+                    </div>
+                    <div id="content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slide-main-container">
+                                    <div ng-view autoscroll="true" class="slide-main-animation"></div>
+                                </div>
                             </div>
                         </div>
+
+
+                        <div ng-include='"../Templates/Common/Footer.html"'></div>
                     </div>
-
-
-                    <div ng-include='"../Templates/Common/Footer.html"'></div>
                 </div>
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 </asp:Content>

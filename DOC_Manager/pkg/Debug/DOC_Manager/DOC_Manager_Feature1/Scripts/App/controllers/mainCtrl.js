@@ -54,8 +54,8 @@
         };
 
         $scope.TaskDtl = {
-            Description: "Task Description /n This is sample desctipyion",
-            Title: "New product Intro",
+            Description: "Welcome to your task manager",
+            Title: "Task Manager",
             Category: '2',
             Priorities: '2',
         };
@@ -119,7 +119,7 @@
 
         //$scope.comment.tskid = '';
         $scope.comment = [];
-        getMyComment(1);
+        //getMyComment(1);
         function getMyComment(id) {
             $scope.comment.tskid = id;
             taskSvc.getCommentsById(id)
@@ -183,6 +183,14 @@
             };
 
             taskSvc.updateTitle($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
+
+
+        $scope.compleateTask = function (ID) {
+            taskSvc.compleateTask(ID)
             .then(function (response) {
                 $scope.getMyTask();
             });
