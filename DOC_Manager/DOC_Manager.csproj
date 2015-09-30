@@ -189,6 +189,9 @@
     <Content Include="Scripts\App\controllers\Task\AddTask.js" />
     <Content Include="Scripts\App\controllers\Task\AllTask.js" />
     <Content Include="Scripts\App\frameworks\parse-options.js" />
+    <Content Include="Scripts\App\frameworks\ui-tree\angular-ui-tree.js" />
+    <Content Include="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.css" />
+    <Content Include="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.js" />
     <Content Include="Scripts\App\frameworks\xeditable\css\xeditable.css" />
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.js" />
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.min.js" />

@@ -5,16 +5,16 @@
 <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
-  
+
     <meta name="WebPartPageExpansion" content="full" />
-    
+
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../Scripts/jquery-extensions.js"></script>
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
     <script type="text/javascript" src="/_layouts/15/SP.UI.Controls.js"></script>
-    
+
     <script type="text/javascript" src="/_layouts/15/core.js"></script>
 
     <script src="../Scripts/ChromeLoader.js"></script>
@@ -33,10 +33,11 @@
     <link href="../Scripts/App/frameworks/css/ngDialog-theme-default.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/angular-grid.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/theme-fresh.css" rel="stylesheet" />
-
+    
+    
     <link href="../Content/css/compiled/theme_styles.css" rel="stylesheet" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
-
+    <link href="../Scripts/App/frameworks/ui-tree/angular-ui-tree.min.css" rel="stylesheet" />
     <script src="../Content/js/jquery.nanoscroller.min.js"></script>
     <script src="../Content/js/lodash.js"></script>
     <script src="../Content/js/demo.js"></script>
@@ -57,6 +58,8 @@
     <script src="../Scripts/App/frameworks/parse-options.js"></script>
     <link href="../Scripts/App/frameworks/xeditable/css/xeditable.css" rel="stylesheet" />
     <script src="../Scripts/App/frameworks/xeditable/js/xeditable.js"></script>
+    <script src="../Scripts/App/frameworks/ui-tree/angular-ui-tree.js"></script>
+
 
     <script src="../Scripts/App/frameworks/angular-file-upload.js"></script>
     <script src="../Scripts/App/frameworks/aggrid/angular-grid.js"></script>
@@ -75,11 +78,14 @@
     <script src="../Scripts/App/controllers/layout/spAppChrome.js"></script>
     <script src="../Scripts/App/controllers/mainCtrl.js"></script>
     <script src="../Scripts/App/controllers/Task/AddTask.js"></script>
+    
+    <script src="../Scripts/App/controllers/Task/MyTask.js"></script>
+    <%-- this are not in use
     <script src="../Scripts/App/controllers/Task/AllTask.js"></script>
     <script src="../Scripts/App/controllers/Task/DashBoard.js"></script>
     <script src="../Scripts/App/controllers/Task/DeleteTask.js"></script>
-    <script src="../Scripts/App/controllers/Task/MyTask.js"></script>
-    <script src="../Scripts/App/controllers/Task/UpdateTask.js"></script>
+    
+    <script src="../Scripts/App/controllers/Task/UpdateTask.js"></script>--%>
 
 </asp:Content>
 
@@ -89,10 +95,10 @@
 
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
     <div data-ng-app="docapp" data-ng-controller="mainCtrl" class="v4master">
-    <div data-ng-include="'../Templates/layout/spAppChrome.html'"></div>
+        <div data-ng-include="'../Templates/layout/spAppChrome.html'"></div>
 
-    <div id="theme-wrapper">
-        <header class="navbar" id="header-navbar">
+        <div id="theme-wrapper">
+            <header class="navbar" id="header-navbar">
             <div class="container">
                 <a href="#/dasboard" id="logo" class="navbar-brand">
                     <img src="img/logo.png" alt="" class="normal-logo logo-white" />
@@ -209,10 +215,10 @@
                     </div>
                 </div>
         </header>
-        <div id="page-wrapper" class="container">
-            <div class="row">
-                <div id="nav-col">
-                    <section id="col-left" class="col-left-nano">
+            <div id="page-wrapper" class="container">
+                <div class="row">
+                    <div id="nav-col">
+                        <section id="col-left" class="col-left-nano">
                         <div id="col-left-inner" class="col-left-nano-content">
                             <div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
                                 <img src="img/users/ryan-300.jpg" />
@@ -266,7 +272,12 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    <li class="active" data-match-route="/claim">
+                                        <a href="#/claim">
+                                            <i class="fa fa-dashboard"></i>
+                                            <span>Contract</span>
+                                        </a>
+                                    </li>
                                     <li data-match-route="/lobby*">
                                         <a href="" class="dropdown-toggle">
                                             <i class="fa fa-user"></i>
@@ -311,23 +322,23 @@
                             </div>
                         </div>
                     </section>
-                    <div id="nav-col-submenu"></div>
-                </div>
-                <div id="content-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="slide-main-container">
-                                <div ng-view autoscroll="true" class="slide-main-animation"></div>
+                        <div id="nav-col-submenu"></div>
+                    </div>
+                    <div id="content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slide-main-container">
+                                    <div ng-view autoscroll="true" class="slide-main-animation"></div>
+                                </div>
                             </div>
                         </div>
+
+
+                        <div ng-include='"../Templates/Common/Footer.html"'></div>
                     </div>
-
-
-                    <div ng-include='"../Templates/Common/Footer.html"'></div>
                 </div>
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 </asp:Content>

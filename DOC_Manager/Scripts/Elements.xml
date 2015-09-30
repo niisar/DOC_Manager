@@ -62,5 +62,8 @@
     <File Path="Scripts\App\frameworks\xeditable\js\xeditable.min.js" Url="Scripts/App/frameworks/xeditable/js/xeditable.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\App\services\task\taskSvc.js" Url="Scripts/App/services/task/taskSvc.js" ReplaceContent="TRUE" />
     <File Path="Scripts\App\controllers\Claim\Claim.js" Url="Scripts/App/controllers/Claim/Claim.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ui-tree\angular-ui-tree.js" Url="Scripts/App/frameworks/ui-tree/angular-ui-tree.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.css" Url="Scripts/App/frameworks/ui-tree/angular-ui-tree.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.js" Url="Scripts/App/frameworks/ui-tree/angular-ui-tree.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

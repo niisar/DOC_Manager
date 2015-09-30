@@ -63,5 +63,8 @@
     <ProjectItemFile Source="App\frameworks\xeditable\js\xeditable.min.js" Target="Scripts\App\frameworks\xeditable\js\" Type="ElementFile" />
     <ProjectItemFile Source="App\services\task\taskSvc.js" Target="Scripts\App\services\task\" Type="ElementFile" />
     <ProjectItemFile Source="App\controllers\Claim\Claim.js" Target="Scripts\App\controllers\Claim\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ui-tree\angular-ui-tree.js" Target="Scripts\App\frameworks\ui-tree\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ui-tree\angular-ui-tree.min.css" Target="Scripts\App\frameworks\ui-tree\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\ui-tree\angular-ui-tree.min.js" Target="Scripts\App\frameworks\ui-tree\" Type="ElementFile" />
   </Files>
 </ProjectItem>

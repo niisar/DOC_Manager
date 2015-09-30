@@ -2383,17 +2383,17 @@ label {
 }
 
 .form-control {
-    border-radius: 3px;
-    background-clip: padding-box;
-    border-color: #e7ebee;
-    border-width: 2px;
-    box-shadow: none;
-    font-size: 13px;
+    border-radius: 3px !important;
+    background-clip: padding-box !important;
+    border-color: #e7ebee !important;
+    border-width: 2px !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
 }
 
     .form-control:focus {
-        border-color: rgba(52,151,219,0.6);
-        outline: 0;
+        border-color: rgba(52,151,219,0.6) !important;
+        outline: 0 !important;
         box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(52,152,219,0.6);
     }
 

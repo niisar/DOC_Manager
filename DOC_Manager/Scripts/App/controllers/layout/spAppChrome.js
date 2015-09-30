@@ -49,7 +49,7 @@
       // hide top app chrome (image & app name)
       nav.setBottomHeaderVisible(false);
 
-      logger.log("spAppChrome loaded", null, controllerId);
+      //logger.log("spAppChrome loaded", null, controllerId);
       common.activateController([], controllerId);
     }
 

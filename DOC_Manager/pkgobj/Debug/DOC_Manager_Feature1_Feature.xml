@@ -162,6 +162,10 @@
     <ElementFile Location="Scripts\App\frameworks\xeditable\js\xeditable.js" />
     <ElementFile Location="Scripts\App\frameworks\xeditable\js\xeditable.min.js" />
     <ElementFile Location="Scripts\App\services\task\taskSvc.js" />
+    <ElementFile Location="Scripts\App\controllers\Claim\Claim.js" />
+    <ElementFile Location="Scripts\App\frameworks\ui-tree\angular-ui-tree.js" />
+    <ElementFile Location="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.css" />
+    <ElementFile Location="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.js" />
     <ElementManifest Location="Content\Elements.xml" />
     <ElementFile Location="Content\App.css" />
     <ElementFile Location="Content\js\bootstrap.js" />
@@ -213,6 +217,12 @@
     <ElementFile Location="Templates\Task\DeleteTask.html" />
     <ElementFile Location="Templates\Task\DashBoard.html" />
     <ElementFile Location="Templates\Task\AddTask.html" />
+    <ElementFile Location="Templates\Claim\Dashboard.html" />
+    <ElementFile Location="Templates\Claim\ClaimTemplates.html" />
+    <ElementFile Location="Templates\Claim\ClaimNew.html" />
+    <ElementFile Location="Templates\Claim\ClaimDashbord.html" />
+    <ElementFile Location="Templates\Claim\ClaimPreview.html" />
+    <ElementFile Location="Templates\Claim\ClaimFinal.html" />
     <ElementManifest Location="asana.ttInstance\Elements.xml" />
     <ElementManifest Location="asana.tt\Elements.xml" />
     <ElementFile Location="asana.tt\Schema.xml" />

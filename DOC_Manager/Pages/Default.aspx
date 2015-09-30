@@ -33,10 +33,11 @@
     <link href="../Scripts/App/frameworks/css/ngDialog-theme-default.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/angular-grid.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/theme-fresh.css" rel="stylesheet" />
-
+    
+    
     <link href="../Content/css/compiled/theme_styles.css" rel="stylesheet" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
-
+    <link href="../Scripts/App/frameworks/ui-tree/angular-ui-tree.min.css" rel="stylesheet" />
     <script src="../Content/js/jquery.nanoscroller.min.js"></script>
     <script src="../Content/js/lodash.js"></script>
     <script src="../Content/js/demo.js"></script>
@@ -57,6 +58,8 @@
     <script src="../Scripts/App/frameworks/parse-options.js"></script>
     <link href="../Scripts/App/frameworks/xeditable/css/xeditable.css" rel="stylesheet" />
     <script src="../Scripts/App/frameworks/xeditable/js/xeditable.js"></script>
+    <script src="../Scripts/App/frameworks/ui-tree/angular-ui-tree.js"></script>
+
 
     <script src="../Scripts/App/frameworks/angular-file-upload.js"></script>
     <script src="../Scripts/App/frameworks/aggrid/angular-grid.js"></script>
@@ -75,11 +78,14 @@
     <script src="../Scripts/App/controllers/layout/spAppChrome.js"></script>
     <script src="../Scripts/App/controllers/mainCtrl.js"></script>
     <script src="../Scripts/App/controllers/Task/AddTask.js"></script>
+    
+    <script src="../Scripts/App/controllers/Task/MyTask.js"></script>
+    <%-- this are not in use
     <script src="../Scripts/App/controllers/Task/AllTask.js"></script>
     <script src="../Scripts/App/controllers/Task/DashBoard.js"></script>
     <script src="../Scripts/App/controllers/Task/DeleteTask.js"></script>
-    <script src="../Scripts/App/controllers/Task/MyTask.js"></script>
-    <script src="../Scripts/App/controllers/Task/UpdateTask.js"></script>
+    
+    <script src="../Scripts/App/controllers/Task/UpdateTask.js"></script>--%>
 
 </asp:Content>
 
@@ -266,10 +272,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="active" data-match-route="/CMS">
-                                        <a href="#/CMS_Master">
+                                    <li class="active" data-match-route="/claim">
+                                        <a href="#/claim">
                                             <i class="fa fa-dashboard"></i>
-                                            <span>Claims</span>
+                                            <span>Contract</span>
                                         </a>
                                     </li>
                                     <li data-match-route="/lobby*">

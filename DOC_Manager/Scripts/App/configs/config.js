@@ -35,13 +35,13 @@
                 }
             },
              {
-                 url: '/2',
+                 url: '/claim',
                  config: {
-                     templateUrl: '../Templates/Document/FileList2.html',
-                     title: 'file List2',
+                     templateUrl: '../Templates/Claim/Dashboard.html',
+                     title: 'Contract',
                      settings: {
                          nav: 1,
-                         content: 'file List2'
+                         content: 'Contract'
                      }
                  }
              }

@@ -12,6 +12,5 @@
             //logger.log("app shell loaded", null, controllerId);
             //common.activateController([], controllerId);
         }
-
     }
 })();
