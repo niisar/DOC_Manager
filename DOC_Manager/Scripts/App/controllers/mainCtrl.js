@@ -206,6 +206,9 @@
     //#region newcrtl
     app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc, $timeout) {
         //#region navigation
+        $scope.navigateDashbord = function () {
+            
+        };
         $scope.tabs = [
            { title: '0', name: 'New Contract', template: '../Templates/Claim/ClaimNew.html', content: "Empty Data" },
            { title: '1', name: 'Preview', template: '../Templates/Claim/ClaimPreview.html', content: "Empty Data" },
@@ -215,7 +218,7 @@
         $scope.templates =
            [
                { name: 'New Contract.', url: '../Templates/Claim/ClaimDashbord.html' },
-               { name: 'New Template', url: '../Templates/Claim/ClaimTemplates.html' },
+               { name: 'New Clause', url: '../Templates/Claim/ClaimTemplates.html' },
                { name: 'Contract', url: '../Templates/Claim/ClaimFinal.html' },
            ];
         $scope.template = $scope.templates[2];

@@ -1,9 +1,12 @@
 ﻿<script type="text/ng-template" id="nodes_renderer.html">
     <div ui-tree-handle class="tree-node tree-node-content">
-        <div class="container-fluid">
+        <div class="pull-left tree-handle">
+            <span class="fa fa-navicon"></span>
+        </div>
+        <div class="container-fluid" data-nodrag>
             <div class="row">
-                <div class="" style="float:left;position:relative; display:block;">
-                    <a class="btn btn-success btn-xs" ng-if="node.nodes && node.nodes.length > 0" data-nodrag ng-click="toggle(this)">
+                <div class="" style="float:left;position:relative; display:block; margin-left: 5px;">
+                    <a class="btn btn-primary btn-xs" ng-if="node.nodes && node.nodes.length > 0" data-nodrag ng-click="toggle(this)">
                         <span class="fa"
                               ng-class="{
           'fa-chevron-right': collapsed,
@@ -13,10 +16,13 @@
 
                 </div>
                 <div class="col-md-9">
-                    {{node.Desc}}
+                    <a buttons="no" e-style="width:600px" editable-textarea="node.Desc" e-rows="3" e-cols="75">
+                        <h4>{{ node.Desc || 'no title' }}</h4>
+                    </a>
+
                 </div>
                 <div class="col-md-2">
-                    <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)">
+                    <a class="pull-right btn btn-warning btn-xs" data-nodrag ng-click="remove(this)">
                         <span class="fa fa-trash"></span>
                     </a>
                     <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;">
