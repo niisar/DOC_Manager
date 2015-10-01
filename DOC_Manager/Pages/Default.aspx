@@ -33,7 +33,7 @@
     <link href="../Scripts/App/frameworks/css/ngDialog-theme-default.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/angular-grid.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/theme-fresh.css" rel="stylesheet" />
-    
+    <link href="../Scripts/App/frameworks/dropdown/angular-dropdowns.css" rel="stylesheet" />
     
     <link href="../Content/css/compiled/theme_styles.css" rel="stylesheet" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
@@ -63,6 +63,7 @@
 
     <script src="../Scripts/App/frameworks/angular-file-upload.js"></script>
     <script src="../Scripts/App/frameworks/aggrid/angular-grid.js"></script>
+    <script src="../Scripts/App/frameworks/dropdown/angular-dropdowns.js"></script>
 
     <script src="../Scripts/App/modules/app.js"></script>
     <script src="../Scripts/App/configs/config.js"></script>
@@ -195,16 +196,10 @@
                                 </div>
                             </li>
                             <li class="dropdown profile-dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="img/users/ryan-300.jpg" />
-                                    <span class="hidden-xs">Rahul Malohotra</span> <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#/pages/user-profile"><i class="fa fa-user"></i>Profile</a></li>
-                                    <li><a href=""><i class="fa fa-cog"></i>Settings</a></li>
-                                    <li><a href=""><i class="fa fa-envelope-o"></i>Messages</a></li>
-                                    <li><a href=""><i class="fa fa-power-off"></i>Logout</a></li>
-                                </ul>
+                               
+                               <a buttons="no" href="#" editable-select="LoginUser.status" e-style="margin-top:10px;" e-ng-options="s.value as s.text for s in AllUsers" class="btn pull-left" onaftersave="getMyTask()">
+                            {{showLoginUser()}}
+                        </a>
                             </li>
                             <li class="hidden-xxs">
                                 <a class="btn">
@@ -225,7 +220,7 @@
                                 <div class="user-box">
                                     <span class="name">
                                         <a class="dropdown-toggle" data-toggle="dropdown">
-                                            Rahul M.
+                                            {{LoginUser.status}}
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                         <ul class="dropdown-menu">

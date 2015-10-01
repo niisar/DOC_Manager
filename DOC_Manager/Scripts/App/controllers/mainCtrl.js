@@ -7,6 +7,29 @@
         //    alert('d');
 
         //};
+        $scope.AllUsers = [
+           {
+               text: 'John',
+               value: 'John'
+           },
+           {
+               text: 'Lynda',
+               value: 'Lynda',
+           },
+           {
+               text: 'Amy',
+               value: 'Amy',
+           }
+        ];
+
+       
+        $scope.LoginUser = {
+            status: "Amy"
+        };
+        $scope.showLoginUser = function () {
+            var selected = $filter('filter')($scope.AllUsers, { value: $scope.LoginUser.status });
+            return ($scope.LoginUser.status && selected.length) ? selected[0].text : 'Not set';
+        };
 
 
         $scope.myTaskList = [];
@@ -34,6 +57,10 @@
             return ($scope.TaskDtl.Category && selected.length) ? selected[0].text : 'Not set';
         };
 
+        $scope.showCurrentUser = function () {
+            var selected = $filter('filter')($scope.AllUsers, { value: $scope.TaskDtl.AllUsers });
+            return ($scope.TaskDtl.AllUsers && selected.length) ? selected[0].text : 'Not set';
+        };
 
 
         $scope.showPriorityClass = function () {
@@ -48,6 +75,7 @@
             $scope.TaskDtl.Title = tsk.Title;
             $scope.TaskDtl.Priorities = tsk.PriorityCod;
             $scope.TaskDtl.Category = tsk.Category;
+            $scope.TaskDtl.AllUsers = tsk.AssignedTo;
 
             //$scope.Priorities.value = tsk.PriorityCode;
             //alert(tsk.TaskId);
@@ -55,12 +83,21 @@
         };
 
         $scope.TaskDtl = {
-            Description: "Welcome to your task manager",
-            Title: "Task Manager",
-            Category: '2',
-            Priorities: '2',
+            Description: "",
+            Title: "",
+            Category: '',
+            Priorities: '',
         };
 
+        $scope.resetLeftPanel = function () {
+            $scope.TaskDtl = {
+                Description: "",
+                Title: "",
+                Category: '',
+                Priorities: '',
+            };
+            getMyComment(0);
+        }
 
 
 
@@ -76,10 +113,12 @@
 
 
         $scope.getMyTask = function getMyTask() {
-            taskSvc.getAll()
+            taskSvc.getTaskByUser($scope.LoginUser.status)
             .then(function (response) {
                 $scope.myTaskList = response.d.results;
+                $scope.resetLeftPanel();
             });
+            console.log($scope.LoginUser.status);
 
         };
 
@@ -116,7 +155,7 @@
 
         $('#page-wrapper').removeClass('nav-small');
 
-        $scope.selectedIndex = 0;
+        //$scope.selectedIndex = 0;
 
         //$scope.comment.tskid = '';
         $scope.comment = [];
@@ -133,10 +172,13 @@
         };
 
         $scope.putComment = function (comment) {
+            $scope.comment.User = $scope.LoginUser.status;
+
             taskSvc.addNewActivities(comment)
             .then(function (response) {
                 console.log(response);
                 getMyComment(comment.tskid);
+                $scope.comment.Cmnt = "";
             });
         };
 
@@ -147,6 +189,18 @@
             };
 
             taskSvc.updatePriority($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
+
+        $scope.updateUser = function () {
+            $scope.updateUserTsk = {
+                ID: $scope.comment.tskid,
+                AssignedTo: $scope.TaskDtl.AllUsers,
+            };
+
+            taskSvc.updateUser($scope.updateUserTsk)
             .then(function (response) {
                 $scope.getMyTask();
             });
@@ -197,9 +251,7 @@
             });
         };
 
-        $scope.user = {
-            name: 'awesome user'
-        };
+        
     });
     //#endregion
 

@@ -4,7 +4,12 @@
     app.factory("taskSvc", ["baseSvc", function (baseService) {
         var listEndPoint = '/_api/web/lists/';
         var getAll = function () {
-            var query = listEndPoint + "GetByTitle('Asana2')/Items?$select=Title,Category,ID,PriorityCod,Desc2&$filter=Status ne 'compleated'";
+            var query = listEndPoint + "GetByTitle('Asana2')/Items?$select=Title,Category,ID,PriorityCod,Desc2,AssignedTo&$filter=Status ne 'compleated'";
+            return baseService.getRequest(query);
+        };
+
+        var getTaskByUser = function (userID) {
+            var query = listEndPoint + "GetByTitle('Asana2')/Items?$select=Title,Category,ID,PriorityCod,Desc2,AssignedTo&$filter=Status ne 'compleated' and AssignedTo eq '"+userID+"'";
             return baseService.getRequest(query);
         };
 
@@ -36,14 +41,23 @@
             return baseService.updateRequest(data, url);
         };
 
-        var updatePriority = function (updatePriorityTsk) {
+        var updateUser = function (updateUserTsk) {
             var data = {
                 __metadata: { 'type': 'SP.Data.Asana2ListItem' },
-                PriorityCod: updatePriorityTsk.PriorityCod.toString(),
+                AssignedTo: updateUserTsk.AssignedTo,
             };
-            var url = listEndPoint + "/GetByTitle('Asana2')/GetItemById(" + updatePriorityTsk.ID + ")";
+            var url = listEndPoint + "/GetByTitle('Asana2')/GetItemById(" + updateUserTsk.ID + ")";
             return baseService.updateRequest(data, url);
         };
+
+        //var updatePriority = function (updatePriorityTsk) {
+        //    var data = {
+        //        __metadata: { 'type': 'SP.Data.Asana2ListItem' },
+        //        PriorityCod: updatePriorityTsk.PriorityCod.toString(),
+        //    };
+        //    var url = listEndPoint + "/GetByTitle('Asana2')/GetItemById(" + updatePriorityTsk.ID + ")";
+        //    return baseService.updateRequest(data, url);
+        //};
 
         var updateCategory = function (updateCategoryTsk) {
             var data = {
@@ -88,7 +102,7 @@
                // Title:'title',
                 ActivityType: '2',
                 Cmnt: comment.Cmnt,
-                UserCmnt: 'Rahul',
+                UserCmnt: comment.User,
                 ProfilePic: 'img/Users/ryan-301.jpg',
                 TaskID: comment.tskid.toString(),
 
@@ -108,7 +122,9 @@
             updateCategory: updateCategory,
             updateDesc: updateDesc,
             updateTitle: updateTitle,
-            compleateTask: compleateTask
+            compleateTask: compleateTask,
+            updateUser: updateUser,
+            getTaskByUser: getTaskByUser
         };
 
 

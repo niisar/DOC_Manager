@@ -166,6 +166,10 @@
     <ElementFile Location="Scripts\App\frameworks\ui-tree\angular-ui-tree.js" />
     <ElementFile Location="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.css" />
     <ElementFile Location="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.js" />
+    <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.css" />
+    <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.js" />
+    <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.min.css" />
+    <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.min.js" />
     <ElementManifest Location="Content\Elements.xml" />
     <ElementFile Location="Content\App.css" />
     <ElementFile Location="Content\js\bootstrap.js" />

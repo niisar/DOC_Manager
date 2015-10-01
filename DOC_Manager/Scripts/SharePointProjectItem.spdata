@@ -66,5 +66,9 @@
     <ProjectItemFile Source="App\frameworks\ui-tree\angular-ui-tree.js" Target="Scripts\App\frameworks\ui-tree\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\ui-tree\angular-ui-tree.min.css" Target="Scripts\App\frameworks\ui-tree\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\ui-tree\angular-ui-tree.min.js" Target="Scripts\App\frameworks\ui-tree\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.css" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.js" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.min.css" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.min.js" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
   </Files>
 </ProjectItem>

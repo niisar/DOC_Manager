@@ -65,5 +65,9 @@
     <File Path="Scripts\App\frameworks\ui-tree\angular-ui-tree.js" Url="Scripts/App/frameworks/ui-tree/angular-ui-tree.js" ReplaceContent="TRUE" />
     <File Path="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.css" Url="Scripts/App/frameworks/ui-tree/angular-ui-tree.min.css" ReplaceContent="TRUE" />
     <File Path="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.js" Url="Scripts/App/frameworks/ui-tree/angular-ui-tree.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\dropdown\angular-dropdowns.css" Url="Scripts/App/frameworks/dropdown/angular-dropdowns.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\dropdown\angular-dropdowns.js" Url="Scripts/App/frameworks/dropdown/angular-dropdowns.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\dropdown\angular-dropdowns.min.css" Url="Scripts/App/frameworks/dropdown/angular-dropdowns.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\dropdown\angular-dropdowns.min.js" Url="Scripts/App/frameworks/dropdown/angular-dropdowns.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

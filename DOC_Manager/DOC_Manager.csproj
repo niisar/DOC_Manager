@@ -188,6 +188,10 @@
     <Content Include="Scripts\App\controllers\Task\UpdateTask.js" />
     <Content Include="Scripts\App\controllers\Task\AddTask.js" />
     <Content Include="Scripts\App\controllers\Task\AllTask.js" />
+    <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.css" />
+    <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.js" />
+    <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.min.css" />
+    <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.min.js" />
     <Content Include="Scripts\App\frameworks\parse-options.js" />
     <Content Include="Scripts\App\frameworks\ui-tree\angular-ui-tree.js" />
     <Content Include="Scripts\App\frameworks\ui-tree\angular-ui-tree.min.css" />

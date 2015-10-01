@@ -33,7 +33,7 @@
     <link href="../Scripts/App/frameworks/css/ngDialog-theme-default.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/angular-grid.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/theme-fresh.css" rel="stylesheet" />
-    
+    <link href="../Scripts/App/frameworks/dropdown/angular-dropdowns.css" rel="stylesheet" />
     
     <link href="../Content/css/compiled/theme_styles.css" rel="stylesheet" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
@@ -63,6 +63,7 @@
 
     <script src="../Scripts/App/frameworks/angular-file-upload.js"></script>
     <script src="../Scripts/App/frameworks/aggrid/angular-grid.js"></script>
+    <script src="../Scripts/App/frameworks/dropdown/angular-dropdowns.js"></script>
 
     <script src="../Scripts/App/modules/app.js"></script>
     <script src="../Scripts/App/configs/config.js"></script>
@@ -195,6 +196,11 @@
                                 </div>
                             </li>
                             <li class="dropdown profile-dropdown">
+                                <p>You have selected: {{ddSelectSelected}}</p>
+                                <div dropdown-select="ddSelectOptions"
+                                    dropdown-model="ddSelectSelected"
+                                    dropdown-item-label="text" >
+                                </div>
                                 <a class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="img/users/ryan-300.jpg" />
                                     <span class="hidden-xs">Rahul Malohotra</span> <b class="caret"></b>

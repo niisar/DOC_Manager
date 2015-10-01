@@ -48,13 +48,19 @@
             <div class="main-box weather-box">
                 <header class="main-box-header clearfix">
                     <div class="pull-left" style="margin-left:-9px">
-                        <h2 buttons="no" href="#" editable-select="TaskDtl.Category" e-ng-options="s.value as s.text for s in Category" class="btn pull-left"  onaftersave="updateCategory()">
+                        <h2 buttons="no" href="#" editable-select="TaskDtl.Category" e-ng-options="s.value as s.text for s in Category" class="btn pull-left" onaftersave="updateCategory()">
                             {{CategoryStatus()}}
                         </h2>
                     </div>
+                    
                     <div class="icon-box pull-right" ng-class="showPriorityClass()">
-                        <a buttons="no" href="#" editable-select="TaskDtl.Priorities" ng-class="showPriorityClass()" e-ng-options="s.value as s.text for s in Priorities" class="btn pull-left" onaftersave="updatePriority()" >
+                        <a buttons="no" href="#" editable-select="TaskDtl.Priorities" ng-class="showPriorityClass()" e-ng-options="s.value as s.text for s in Priorities" class="btn pull-left" onaftersave="updatePriority()">
                             {{showPriorityStatus()}}
+                        </a>
+                    </div>
+                    <div class="icon-box pull-right">
+                        <a buttons="no" href="#" editable-select="TaskDtl.AllUsers" e-ng-options="s.value as s.text for s in AllUsers" class="btn pull-left" onaftersave="updateUser()">
+                            {{showCurrentUser()}}
                         </a>
                     </div>
                 </header>
