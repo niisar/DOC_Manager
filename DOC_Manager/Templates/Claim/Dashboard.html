@@ -13,35 +13,34 @@
                 <header class="main-box-header clearfix">
                     <h2 class="pull-left">{{template.name}}</h2>
                     <div class="filter-block pull-right">
-                        <div class="form-group pull-left" >
-                            <select ng-model="cnt.ContractType" ng-init="cnt.ContractID= '1'" id="assign" class="form-control">
+                        <div class="form-group pull-left">
+                            <select ng-model="cnt.ContractType" ng-change="externalFilterChanged()" ng-init="cnt.ContractID= '1'" id="assign" class="form-control">
                                 <option value="1" ng-selected="true">Partnership</option>
                                 <option value="2">Software Licence</option>
                                 <option value="3">Insurance</option>
                                 <option value="4">Trade Finance</option>
                             </select>
                         </div>
-                        <div class="form-group pull-left" >
+                        <div class="form-group pull-left">
                             <input type="text" class="form-control" ng-lazy-show="tabs.activeTab == 0" ng-model="ContractMaster.quickFilterText" placeholder="Search...">
                             <i class="fa fa-search search-icon"></i>
                         </div>
 
                         <div class="form-group pull-left">
-                            <a href="" class="btn btn-primary " ng-click="navigateDashbord()" >
+                            <md-button class="md-raised" type="button" ng-click="template = templates[0]">
                                 New Contract
-                            </a>
+                            </md-button>
                         </div>
                         <div class="form-group pull-left">
-                            <a href="" class="btn btn-primary " ng-click="template = templates[1]" data-ng-click="showClauseFlag()" >
+                            <md-button class="md-raised" type="button" ng-click="template = templates[1]">
                                 New Clauses
-                            </a>
+                            </md-button>
+
                         </div>
                         <div class="btn-group pull-right">
-
-                            <a class="btn btn-link2" ng-click="template = templates[2]">
-                                <i class="fa fa-th"></i>
-                            </a>
-                           
+                            <md-button class="md-raised" type="button" ng-click="template = templates[2]">
+                                Clauses List
+                            </md-button>
                         </div>
                     </div>
                 </header>
@@ -54,3 +53,12 @@
     </div>
 
 </div>
+<style>
+    .md-raised {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin:0px;
+        background-color: #03A9F4;
+        text-transform: capitalize;
+    }
+</style>

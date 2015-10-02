@@ -1,0 +1,174 @@
+﻿<wizard on-finish="finishedWizard()">
+    <wz-step title="Basic Information">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Name" type="text" ng-model="VisitorDetails.Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Other Guests.</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Name" type="text" ng-model="VisitorDetails.Guests">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Email" type="text" ng-model="VisitorDetails.Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Phone</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Phone" type="text" ng-model="VisitorDetails.Phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">ID Card</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Driver licence, Voter Id, Etc." type="text" ng-model="VisitorDetails.IdCard">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-next class="btn btn-primary">Next</button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="Capture Picture">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <div class="col-lg-9">
+                    <ng-include src="'/app/views/camera/capture.html'"></ng-include>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+                    <button type="button" wz-next class="btn btn-primary">Next</button>
+
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="Vehicle">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Vehicle</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Vehicle Name" type="text" ng-model="VisitorDetails.Vehicle">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Vehicle Nu.</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Vehicle Number" type="text" ng-model="VisitorDetails.VehicleNu">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Colour</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Vehicle Colour" type="text" ng-model="VisitorDetails.Color">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Parking</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Parking Zone" type="text" ng-model="VisitorDetails.ParkineZone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+
+                    <button type="button" wz-next class="btn btn-primary">Next</button>
+
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="Meeting">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Building</label>
+                <div class="col-lg-9">
+                    <select class="form-control" ng-model="VisitorDetails.Building">
+                        <option>--Select--</option>
+                        <option>TCS</option>
+                        <option>Wipro</option>
+                        <option>IBM</option>
+                        <option>Accenture</option>
+                        <option>PWC</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Meet To</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Meet To" type="text" ng-model="VisitorDetails.MeeTTo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">In Time</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="In Time" type="text" ng-model="VisitorDetails.InTime">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Out Time</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Out Time" readonly="readonly" type="text" ng-model="VisitorDetails.OutTime">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+
+                    <button type="button" wz-next class="btn btn-primary">Next</button>
+
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="Finish">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Email To</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" readonly="readonly" placeholder="Email To" value="nisar2048@gmail.com" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">SMS To</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" ng-model="VisitorDetails.SmsNo" readonly="readonly" placeholder="SMS To" value="9937673733" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Token No.</label>
+                <div class="col-lg-9">
+                    <input class="form-control" readonly="readonly" id="inputPassword1" placeholder="Token Number" value="67032P" type="text" ng-model="VisitorDetails.TokenNo">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+
+                    <button type="button" wz-next class="btn btn-primary">Finish</button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+</wizard>

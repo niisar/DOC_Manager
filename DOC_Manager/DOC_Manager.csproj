@@ -71,6 +71,7 @@
     <Content Include="Content\fonts\weathericons-regular-webfont.svg" />
     <Content Include="Pages\img\error.png" />
     <Content Include="Pages\img\info.png" />
+    <Content Include="Pages\img\logo.png" />
     <Content Include="Pages\img\success.png" />
     <Content Include="Pages\img\warning.png" />
     <Content Include="Pages\img\error-404-v2.png" />
@@ -86,7 +87,7 @@
     <Content Include="Pages\img\logo-small.png">
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
-    <Content Include="Pages\img\logo.png" />
+    <Content Include="Pages\img\logo_karansoft.png" />
     <Content Include="Pages\img\logo_.png" />
     <Content Include="Pages\img\samples\1.jpg" />
     <Content Include="Pages\img\samples\10.png" />
@@ -188,6 +189,8 @@
     <Content Include="Scripts\App\controllers\Task\UpdateTask.js" />
     <Content Include="Scripts\App\controllers\Task\AddTask.js" />
     <Content Include="Scripts\App\controllers\Task\AllTask.js" />
+    <Content Include="Scripts\App\frameworks\angular-wizard\angular-wizard.css" />
+    <Content Include="Scripts\App\frameworks\angular-wizard\angular-wizard.js" />
     <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.css" />
     <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.js" />
     <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.min.css" />
@@ -200,12 +203,14 @@
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.js" />
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.min.js" />
     <Content Include="Scripts\App\services\task\taskSvc.js" />
-    <Content Include="Templates\Claim\ClaimFinal.html" />
+    <Content Include="Templates\Claim\ContractStep2.html" />
     <Content Include="Templates\Claim\ClaimPreview.html" />
     <Content Include="Templates\Claim\ClaimDashbord.html" />
-    <Content Include="Templates\Claim\ClaimNew.html" />
-    <Content Include="Templates\Claim\ClaimTemplates.html" />
+    <Content Include="Templates\Claim\ContractStep3.html" />
+    <Content Include="Templates\Claim\ClauseNew.html" />
     <Content Include="Templates\Claim\Dashboard.html" />
+    <Content Include="Templates\Contract\ContractAdd.html" />
+    <Content Include="Templates\Contract\Clauses.html" />
     <Content Include="Templates\layout\spAppChrome.html" />
     <Content Include="Scripts\App\controllers\layout\spAppChrome.js" />
     <Content Include="Scripts\App\controllers\mainCtrl.js" />

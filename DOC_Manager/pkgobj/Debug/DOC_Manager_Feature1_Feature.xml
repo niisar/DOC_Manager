@@ -14,7 +14,7 @@
     <ElementFile Location="Pages\img\logo-small - Copy.png" />
     <ElementFile Location="Pages\img\logo-small.png" />
     <ElementFile Location="Pages\img\logo - Copy.png" />
-    <ElementFile Location="Pages\img\logo.png" />
+    <ElementFile Location="Pages\img\logo_karansoft.png" />
     <ElementFile Location="Pages\img\logo.psd" />
     <ElementFile Location="Pages\img\logo_.png" />
     <ElementFile Location="Pages\img\logo1 - Copy.psd" />
@@ -101,6 +101,7 @@
     <ElementFile Location="Pages\img\success.png" />
     <ElementFile Location="Pages\img\info.png" />
     <ElementFile Location="Pages\img\error.png" />
+    <ElementFile Location="Pages\img\logo.png" />
     <ElementManifest Location="Scripts\Elements.xml" />
     <ElementFile Location="Scripts\App.js" />
     <ElementFile Location="Scripts\jquery-1.9.1.min.map" />
@@ -170,6 +171,8 @@
     <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.js" />
     <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.min.css" />
     <ElementFile Location="Scripts\App\frameworks\dropdown\angular-dropdowns.min.js" />
+    <ElementFile Location="Scripts\App\frameworks\angular-wizard\angular-wizard.css" />
+    <ElementFile Location="Scripts\App\frameworks\angular-wizard\angular-wizard.js" />
     <ElementManifest Location="Content\Elements.xml" />
     <ElementFile Location="Content\App.css" />
     <ElementFile Location="Content\js\bootstrap.js" />
@@ -222,11 +225,13 @@
     <ElementFile Location="Templates\Task\DashBoard.html" />
     <ElementFile Location="Templates\Task\AddTask.html" />
     <ElementFile Location="Templates\Claim\Dashboard.html" />
-    <ElementFile Location="Templates\Claim\ClaimTemplates.html" />
-    <ElementFile Location="Templates\Claim\ClaimNew.html" />
+    <ElementFile Location="Templates\Claim\ClauseNew.html" />
+    <ElementFile Location="Templates\Claim\ContractStep3.html" />
     <ElementFile Location="Templates\Claim\ClaimDashbord.html" />
     <ElementFile Location="Templates\Claim\ClaimPreview.html" />
-    <ElementFile Location="Templates\Claim\ClaimFinal.html" />
+    <ElementFile Location="Templates\Claim\ContractStep2.html" />
+    <ElementFile Location="Templates\Contract\Clauses.html" />
+    <ElementFile Location="Templates\Contract\ContractAdd.html" />
     <ElementManifest Location="asana.ttInstance\Elements.xml" />
     <ElementManifest Location="asana.tt\Elements.xml" />
     <ElementFile Location="asana.tt\Schema.xml" />

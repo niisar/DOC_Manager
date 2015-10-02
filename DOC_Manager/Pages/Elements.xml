@@ -13,7 +13,7 @@
     <File Path="Pages\img\logo-small - Copy.png" Url="Pages/img/logo-small - Copy.png" ReplaceContent="TRUE" />
     <File Path="Pages\img\logo-small.png" Url="Pages/img/logo-small.png" ReplaceContent="TRUE" />
     <File Path="Pages\img\logo - Copy.png" Url="Pages/img/logo - Copy.png" ReplaceContent="TRUE" />
-    <File Path="Pages\img\logo.png" Url="Pages/img/logo.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo_karansoft.png" Url="Pages/img/logo_karansoft.png" ReplaceContent="TRUE" />
     <File Path="Pages\img\logo.psd" Url="Pages/img/logo.psd" ReplaceContent="TRUE" />
     <File Path="Pages\img\logo_.png" Url="Pages/img/logo_.png" ReplaceContent="TRUE" />
     <File Path="Pages\img\logo1 - Copy.psd" Url="Pages/img/logo1 - Copy.psd" ReplaceContent="TRUE" />
@@ -100,5 +100,6 @@
     <File Path="Pages\img\success.png" Url="Pages/img/success.png" ReplaceContent="TRUE" />
     <File Path="Pages\img\info.png" Url="Pages/img/info.png" ReplaceContent="TRUE" />
     <File Path="Pages\img\error.png" Url="Pages/img/error.png" ReplaceContent="TRUE" />
+    <File Path="Pages\img\logo.png" Url="Pages/img/logo.png" ReplaceContent="TRUE" />
   </Module>
 </Elements>

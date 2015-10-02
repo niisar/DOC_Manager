@@ -14,7 +14,7 @@
     <ProjectItemFile Source="img\logo-small - Copy.png" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\logo-small.png" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\logo - Copy.png" Target="Pages\img\" Type="ElementFile" />
-    <ProjectItemFile Source="img\logo.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo_karansoft.png" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\logo.psd" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\logo_.png" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\logo1 - Copy.psd" Target="Pages\img\" Type="ElementFile" />
@@ -101,5 +101,6 @@
     <ProjectItemFile Source="img\success.png" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\info.png" Target="Pages\img\" Type="ElementFile" />
     <ProjectItemFile Source="img\error.png" Target="Pages\img\" Type="ElementFile" />
+    <ProjectItemFile Source="img\logo.png" Target="Pages\img\" Type="ElementFile" />
   </Files>
 </ProjectItem>

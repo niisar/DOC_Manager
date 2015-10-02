@@ -22,7 +22,7 @@
            }
         ];
 
-       
+
         $scope.LoginUser = {
             status: "Amy"
         };
@@ -251,33 +251,35 @@
             });
         };
 
-        
+
     });
     //#endregion
 
     //#region newcrtl
-    app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc, $timeout) {
+    app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc, common,  $timeout) {
+        var logger = common.logger;
+
         //#region navigation
-        $scope.navigateDashbord = function () {
-            
-        };
+     
         $scope.tabs = [
-           { title: '0', name: 'New Contract', template: '../Templates/Claim/ClaimNew.html', content: "Empty Data" },
+           { title: '0', name: 'New Contract', template: '../Templates/Claim/ContractStep3.html', content: "Empty Data" },
            { title: '1', name: 'Preview', template: '../Templates/Claim/ClaimPreview.html', content: "Empty Data" },
 
         ];
 
         $scope.templates =
            [
-               { name: 'New Contract.', url: '../Templates/Claim/ClaimDashbord.html' },
-               { name: 'New Clause', url: '../Templates/Claim/ClaimTemplates.html' },
-               { name: 'Contract', url: '../Templates/Claim/ClaimFinal.html' },
+               { name: 'New Contract', url: '../Templates/Contract/ContractAdd.html' },
+               { name: 'New Clause', url: '../Templates/Claim/ClauseNew.html' },
+               { name: 'Contract', url: '../Templates/Claim/ContractStep2.html' },
+               { name: 'Clauses', url: '../Templates/Contract/Clauses.html' },
+               { name: 'New Contract', url: '../Templates/Claim/ContractStep3.html' },
            ];
-        $scope.template = $scope.templates[2];
+        $scope.template = $scope.templates[3];
         //#endregion
 
         $scope.navigateDashbord = function () {
-            $scope.template = $scope.templates[0];
+            //$scope.template = $scope.templates[0];
             console.log($scope.ContractMaster.selectedRows);
 
             $scope.treedata = $scope.ContractMaster.selectedRows;
@@ -295,9 +297,9 @@
                   { field: 'Desc', headerName: 'Contract Description', width: 890 },
             ],
             angularCompileRows: true,
-            rowSelection: 'multiple',
-            
-                   };
+            rowSelection: 'multiple'
+
+        };
 
 
         $scope.GetContractMaster = function () {
@@ -326,7 +328,16 @@
         };
         $scope.GetContractMaster();
 
+        $scope.newClause = [];
+        $scope.addContractMaster = function (newClause) {
+            $scope.tempContractMaster = [{ 'id': '14', 'ContractType': newClause.ContractType, 'nodes': [], 'Title': newClause.Title, 'Desc': newClause.Desc }];
+            $scope.ContractMaster.rowData = $scope.tempContractMaster.concat($scope.ContractMaster.rowData);
 
+            $scope.newClause.ContractType = "1";
+            $scope.newClause.Title = "";
+            $scope.newClause.Desc = "";
+            logger.logSuccess("Clause Saved.", null, "newctrl");
+        };
 
         //#endregion
 
@@ -350,7 +361,7 @@
             nodeData.nodes.push({
                 id: nodeData.id * 10 + nodeData.nodes.length,
                 Title: nodeData.Title + '.' + (nodeData.nodes.length + 1),
-                Desc: (nodeData.nodes.length + 1)+'.'+ ' Click to edit.' ,
+                Desc: (nodeData.nodes.length + 1) + '.' + ' Click to edit.',
                 nodes: []
             });
         };
@@ -414,6 +425,9 @@
 
         //#endregion
 
+        //#region material
+
+        //#endregion
     });
     //#endregion
 })();

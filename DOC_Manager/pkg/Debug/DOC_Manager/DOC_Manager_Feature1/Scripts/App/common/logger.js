@@ -52,17 +52,17 @@
                         return;
                     } else {
                         iconUrl = "img/info.png";
-                        notiTitle = "Task Manager: DEBUG LOG";
+                        notiTitle = "QualApps: DEBUG LOG";
                     }
                 } else if (notificationType === 'error') {
                     iconUrl = "img/error.png";
-                    notiTitle = "Task Manager: ERROR";
+                    notiTitle = "QualApps : ERROR";
                 } else if (notificationType === 'warning') {
                     iconUrl = "img/warning.png";
-                    notiTitle = "Task Manager: WARNING";
+                    notiTitle = "QualApps : WARNING";
                 } else if (notificationType === 'success') {
                     iconUrl = "img/success.png";
-                    notiTitle = "Task Manager";
+                    notiTitle = "SUCCESS";
                 }
 
                 // create sharepoint notification

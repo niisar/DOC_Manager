@@ -1,0 +1,95 @@
+﻿<wizard on-finish="finishedWizard()">
+    <wz-step title="Contract Detail">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Title</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Title" type="text" ng-model="VisitorDetails.Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Start date</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Start date" type="text" ng-model="VisitorDetails.Guests">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">End date</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="End date" type="text" ng-model="VisitorDetails.Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Service Category </label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Service Category " type="text" ng-model="VisitorDetails.Phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Budget</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Budget" type="text" ng-model="VisitorDetails.IdCard">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Stackholders</label>
+                <div class="col-lg-9">
+                    <input class="form-control" id="inputPassword1" placeholder="Stackholders" type="text" ng-model="VisitorDetails.kk">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-next class="btn btn-primary">Next</button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="Choose Clauses">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <div class="col-lg-12">
+                    <ng-include src="'../Templates/Claim/ContractStep2.html'"></ng-include>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+                    <button type="button" wz-next class="btn btn-primary" ng-click="navigateDashbord()">Next</button>
+
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="Edit Clauses">
+        <div class="form-horizontal" role="form">
+            <div class="form-group">
+                <div class="col-lg-12">
+                    <ng-include src="'../Templates/Claim/ContractStep3.html'"></ng-include>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+                    <button type="button" wz-next class="btn btn-primary">Next</button>
+
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    
+    <wz-step title="Finish">
+        <div class="form-horizontal" role="form">
+           
+            <div class="form-group">
+                <div class="col-lg-offset-1 col-lg-9">
+                    <button type="button" wz-previous class="btn btn-primary">Previous</button>
+
+                    <button type="button" wz-next class="btn btn-primary">Finish</button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+</wizard>

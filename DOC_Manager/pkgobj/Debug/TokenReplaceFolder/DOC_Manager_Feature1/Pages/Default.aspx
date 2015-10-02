@@ -23,6 +23,7 @@
 
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
     <link href="../Scripts/App/frameworks/ngToast/angular-toastr.css" rel="stylesheet" />
+    <link href="../Scripts/App/frameworks/angular-wizard/angular-wizard.css" rel="stylesheet" />
     <link href="../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="../Content/css/angular/angular-motion.css" rel="stylesheet" />
     <link href="../Content/css/angular.css" rel="stylesheet" />
@@ -38,6 +39,8 @@
     <link href="../Content/css/compiled/theme_styles.css" rel="stylesheet" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
     <link href="../Scripts/App/frameworks/ui-tree/angular-ui-tree.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+
     <script src="../Content/js/jquery.nanoscroller.min.js"></script>
     <script src="../Content/js/lodash.js"></script>
     <script src="../Content/js/demo.js"></script>
@@ -46,6 +49,8 @@
     <script src="../Scripts/App.js"></script>
     <!--<script src="../Scripts/App/frameworks/angular.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
     <script src="../Scripts/App/frameworks/angular-route.min.js"></script>
     <script src="../Scripts/App/frameworks/loading-bar.js"></script>
     <script src="../Scripts/App/frameworks/angular-animate.js"></script>
@@ -63,7 +68,9 @@
 
     <script src="../Scripts/App/frameworks/angular-file-upload.js"></script>
     <script src="../Scripts/App/frameworks/aggrid/angular-grid.js"></script>
+    <%--Todo: delete dropdown. it is not in use--%>
     <script src="../Scripts/App/frameworks/dropdown/angular-dropdowns.js"></script>
+    <script src="../Scripts/App/frameworks/angular-wizard/angular-wizard.js"></script>
 
     <script src="../Scripts/App/modules/app.js"></script>
     <script src="../Scripts/App/configs/config.js"></script>
@@ -105,7 +112,7 @@
                     <img src="img/logo.png" alt="" class="normal-logo logo-white" />
                     <img src="img/logo-black.png" alt="" class="normal-logo logo-black" />
                     <img src="img/logo-small.png" alt="" class="small-logo hidden-xs hidden-sm hidden" />
-                </a>
+                </a> 
                 <div class="clearfix">
                     <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
                         <span class="sr-only">Toggle navigation</span>
@@ -196,21 +203,10 @@
                                 </div>
                             </li>
                             <li class="dropdown profile-dropdown">
-                                <p>You have selected: {{ddSelectSelected}}</p>
-                                <div dropdown-select="ddSelectOptions"
-                                    dropdown-model="ddSelectSelected"
-                                    dropdown-item-label="text" >
-                                </div>
-                                <a class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="img/users/ryan-300.jpg" />
-                                    <span class="hidden-xs">Rahul Malohotra</span> <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#/pages/user-profile"><i class="fa fa-user"></i>Profile</a></li>
-                                    <li><a href=""><i class="fa fa-cog"></i>Settings</a></li>
-                                    <li><a href=""><i class="fa fa-envelope-o"></i>Messages</a></li>
-                                    <li><a href=""><i class="fa fa-power-off"></i>Logout</a></li>
-                                </ul>
+                               
+                               <a buttons="no" href="#" editable-select="LoginUser.status" e-style="margin-top:10px;" e-ng-options="s.value as s.text for s in AllUsers" class="btn pull-left" onaftersave="getMyTask()">
+                            {{showLoginUser()}}
+                        </a>
                             </li>
                             <li class="hidden-xxs">
                                 <a class="btn">
@@ -231,7 +227,7 @@
                                 <div class="user-box">
                                     <span class="name">
                                         <a class="dropdown-toggle" data-toggle="dropdown">
-                                            Rahul M.
+                                            {{LoginUser.status}}
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                         <ul class="dropdown-menu">

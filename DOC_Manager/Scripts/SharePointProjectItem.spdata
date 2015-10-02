@@ -70,5 +70,7 @@
     <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.js" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.min.css" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.min.js" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-wizard\angular-wizard.css" Target="Scripts\App\frameworks\angular-wizard\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\angular-wizard\angular-wizard.js" Target="Scripts\App\frameworks\angular-wizard\" Type="ElementFile" />
   </Files>
 </ProjectItem>

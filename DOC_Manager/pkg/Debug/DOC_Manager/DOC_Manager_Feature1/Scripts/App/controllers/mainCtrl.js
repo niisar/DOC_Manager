@@ -7,35 +7,30 @@
         //    alert('d');
 
         //};
-        $scope.ddSelectOptions = [
-       {
-           text: 'Option1',
-           value: 'a value'
-       },
-       {
-           text: 'Option2',
-           value: 'another value',
-           someprop: 'somevalue'
-       },
-       {
-           // Any option with divider set to true will be a divider
-           // in the menu and cannot be selected.
-           divider: true
-       },
-       {
-           // Any divider option with a 'text' property will
-           // behave similarly to a divider and cannot be selected.
-           divider: true,
-           text: 'divider label'
-       },
-       {
-           // Example of an option with the 'href' property
-           text: 'Option4',
-           href: '#option4'
-       }
+        $scope.AllUsers = [
+           {
+               text: 'John',
+               value: 'John'
+           },
+           {
+               text: 'Lynda',
+               value: 'Lynda',
+           },
+           {
+               text: 'Amy',
+               value: 'Amy',
+           }
         ];
 
-        $scope.ddSelectSelected = {};
+       
+        $scope.LoginUser = {
+            status: "Amy"
+        };
+        $scope.showLoginUser = function () {
+            var selected = $filter('filter')($scope.AllUsers, { value: $scope.LoginUser.status });
+            return ($scope.LoginUser.status && selected.length) ? selected[0].text : 'Not set';
+        };
+
 
         $scope.myTaskList = [];
         $scope.updatePriorityTsk = [];
@@ -62,6 +57,10 @@
             return ($scope.TaskDtl.Category && selected.length) ? selected[0].text : 'Not set';
         };
 
+        $scope.showCurrentUser = function () {
+            var selected = $filter('filter')($scope.AllUsers, { value: $scope.TaskDtl.AllUsers });
+            return ($scope.TaskDtl.AllUsers && selected.length) ? selected[0].text : 'Not set';
+        };
 
 
         $scope.showPriorityClass = function () {
@@ -76,6 +75,7 @@
             $scope.TaskDtl.Title = tsk.Title;
             $scope.TaskDtl.Priorities = tsk.PriorityCod;
             $scope.TaskDtl.Category = tsk.Category;
+            $scope.TaskDtl.AllUsers = tsk.AssignedTo;
 
             //$scope.Priorities.value = tsk.PriorityCode;
             //alert(tsk.TaskId);
@@ -83,12 +83,21 @@
         };
 
         $scope.TaskDtl = {
-            Description: "Welcome to your task manager",
-            Title: "Task Manager",
-            Category: '2',
-            Priorities: '2',
+            Description: "",
+            Title: "",
+            Category: '',
+            Priorities: '',
         };
 
+        $scope.resetLeftPanel = function () {
+            $scope.TaskDtl = {
+                Description: "",
+                Title: "",
+                Category: '',
+                Priorities: '',
+            };
+            getMyComment(0);
+        }
 
 
 
@@ -104,10 +113,12 @@
 
 
         $scope.getMyTask = function getMyTask() {
-            taskSvc.getAll()
+            taskSvc.getTaskByUser($scope.LoginUser.status)
             .then(function (response) {
                 $scope.myTaskList = response.d.results;
+                $scope.resetLeftPanel();
             });
+            console.log($scope.LoginUser.status);
 
         };
 
@@ -144,7 +155,7 @@
 
         $('#page-wrapper').removeClass('nav-small');
 
-        $scope.selectedIndex = 0;
+        //$scope.selectedIndex = 0;
 
         //$scope.comment.tskid = '';
         $scope.comment = [];
@@ -161,10 +172,13 @@
         };
 
         $scope.putComment = function (comment) {
+            $scope.comment.User = $scope.LoginUser.status;
+
             taskSvc.addNewActivities(comment)
             .then(function (response) {
                 console.log(response);
                 getMyComment(comment.tskid);
+                $scope.comment.Cmnt = "";
             });
         };
 
@@ -175,6 +189,18 @@
             };
 
             taskSvc.updatePriority($scope.updatePriorityTsk)
+            .then(function (response) {
+                $scope.getMyTask();
+            });
+        };
+
+        $scope.updateUser = function () {
+            $scope.updateUserTsk = {
+                ID: $scope.comment.tskid,
+                AssignedTo: $scope.TaskDtl.AllUsers,
+            };
+
+            taskSvc.updateUser($scope.updateUserTsk)
             .then(function (response) {
                 $scope.getMyTask();
             });
@@ -225,31 +251,33 @@
             });
         };
 
-        $scope.user = {
-            name: 'awesome user'
-        };
+        
     });
     //#endregion
 
     //#region newcrtl
-    app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc, $timeout) {
+    app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc,common, $timeout) {
+        var logger = common.logger;
+        
         //#region navigation
         $scope.navigateDashbord = function () {
             
         };
         $scope.tabs = [
-           { title: '0', name: 'New Contract', template: '../Templates/Claim/ClaimNew.html', content: "Empty Data" },
+           { title: '0', name: 'New Contract', template: '../Templates/Claim/ContractStep3.html', content: "Empty Data" },
            { title: '1', name: 'Preview', template: '../Templates/Claim/ClaimPreview.html', content: "Empty Data" },
 
         ];
 
         $scope.templates =
            [
-               { name: 'New Contract.', url: '../Templates/Claim/ClaimDashbord.html' },
-               { name: 'New Clause', url: '../Templates/Claim/ClaimTemplates.html' },
-               { name: 'Contract', url: '../Templates/Claim/ClaimFinal.html' },
+               { name: 'New Contract', url: '../Templates/Contract/ContractAdd.html' },
+               { name: 'New Clause', url: '../Templates/Claim/ClauseNew.html' },
+               { name: 'Contract', url: '../Templates/Claim/ContractStep2.html' },
+               { name: 'Clauses', url: '../Templates/Contract/Clauses.html' },
+               { name: 'New Contract', url: '../Templates/Claim/ContractStep3.html' },
            ];
-        $scope.template = $scope.templates[2];
+        $scope.template = $scope.templates[3];
         //#endregion
 
         $scope.navigateDashbord = function () {
@@ -271,7 +299,7 @@
                   { field: 'Desc', headerName: 'Contract Description', width: 890 },
             ],
             angularCompileRows: true,
-            rowSelection: 'multiple',
+            rowSelection: 'multiple'
             
                    };
 
@@ -302,8 +330,17 @@
         };
         $scope.GetContractMaster();
 
+        $scope.newClause = [];
+        $scope.addContractMaster = function (newClause) {
+            $scope.tempContractMaster = [{ 'id': '14', 'ContractType': newClause.ContractType, 'nodes': [], 'Title': newClause.Title, 'Desc': newClause.Desc }];
+            $scope.ContractMaster.rowData = $scope.tempContractMaster.concat($scope.ContractMaster.rowData);
 
-
+            $scope.newClause.ContractType = "1";
+            $scope.newClause.Title = "";
+            $scope.newClause.Desc = "";
+            logger.logSuccess("Clause Saved.", null, "newctrl");
+        };
+        
         //#endregion
 
         //#region uitree
@@ -390,6 +427,9 @@
 
         //#endregion
 
+        //#region material
+
+        //#endregion
     });
     //#endregion
 })();
