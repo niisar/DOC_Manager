@@ -34,6 +34,8 @@
     <link href="../Scripts/App/frameworks/css/ngDialog-theme-default.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/angular-grid.css" rel="stylesheet" />
     <link href="../Scripts/App/frameworks/aggrid/theme-fresh.css" rel="stylesheet" />
+    <%--<link href="../Scripts/App/frameworks/aggridnew/ag-grid.css" rel="stylesheet" />
+    <link href="../Scripts/App/frameworks/aggridnew/theme-fresh.css" rel="stylesheet" />--%>
     <link href="../Scripts/App/frameworks/dropdown/angular-dropdowns.css" rel="stylesheet" />
     
     <link href="../Content/css/compiled/theme_styles.css" rel="stylesheet" />
@@ -68,7 +70,13 @@
 
     <script src="../Scripts/App/frameworks/angular-file-upload.js"></script>
     <script src="../Scripts/App/frameworks/aggrid/angular-grid.js"></script>
+    <%--<script src="../Scripts/App/frameworks/aggridnew/ag-grid.js"></script>--%>
+
+
+
+
     <%--Todo: delete dropdown. it is not in use--%>
+
     <script src="../Scripts/App/frameworks/dropdown/angular-dropdowns.js"></script>
     <script src="../Scripts/App/frameworks/angular-wizard/angular-wizard.js"></script>
 
@@ -80,13 +88,17 @@
     <script src="../Scripts/App/common/logger.js"></script>
 
     <script src="../Scripts/App/services/baseSvc.js"></script>
+    <script src="../Scripts/App/services/Clause/clauseSvc.js"></script>
     <script src="../Scripts/App/services/task/taskSvc.js"></script>
+    <script src="../Scripts/App/services/Contract/contractSvc.js"></script>
 
     <script src="../Scripts/App/controllers/Document/FileList.js"></script>
     <script src="../Scripts/App/controllers/layout/spAppChrome.js"></script>
     <script src="../Scripts/App/controllers/mainCtrl.js"></script>
     <script src="../Scripts/App/controllers/Task/AddTask.js"></script>
     
+    <script src="../Scripts/App/controllers/Clause/Clause.js"></script>
+
     <script src="../Scripts/App/controllers/Task/MyTask.js"></script>
     <%-- this are not in use
     <script src="../Scripts/App/controllers/Task/AllTask.js"></script>
@@ -274,9 +286,15 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="active" data-match-route="/claim">
-                                        <a href="#/claim">
+                                    <li data-match-route="/Clause">
+                                        <a href="#/Clause">
                                             <i class="fa fa-dashboard"></i>
+                                            <span>Clause</span>
+                                        </a>
+                                    </li>
+                                    <li data-match-route="/claim">
+                                        <a href="#/claim">
+                                            <i class="fa fa-certificate"></i>
                                             <span>Contract</span>
                                         </a>
                                     </li>

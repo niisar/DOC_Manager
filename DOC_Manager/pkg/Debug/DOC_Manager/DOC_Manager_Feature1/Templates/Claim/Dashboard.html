@@ -14,7 +14,7 @@
                     <h2 class="pull-left">{{template.name}}</h2>
                     <div class="filter-block pull-right">
                         <div class="form-group pull-left">
-                            <select ng-model="cnt.ContractType" ng-change="externalFilterChanged()" ng-init="cnt.ContractID= '1'" id="assign" class="form-control">
+                            <select ng-model="cnt.ClauseType" ng-change="externalFilterChanged()" ng-init="cnt.ContractID= '1'" id="assign" class="form-control">
                                 <option value="1" ng-selected="true">Partnership</option>
                                 <option value="2">Software Licence</option>
                                 <option value="3">Insurance</option>
@@ -27,19 +27,8 @@
                         </div>
 
                         <div class="form-group pull-left">
-                            <md-button class="md-raised" type="button" ng-click="navigateDashbord()">
+                            <md-button class="md-raised" type="button" ng-click="template = templates[0]">
                                 New Contract
-                            </md-button>
-                        </div>
-                        <div class="form-group pull-left">
-                            <md-button class="md-raised" type="button" ng-click="template = templates[1]">
-                                New Clauses
-                            </md-button>
-
-                        </div>
-                        <div class="btn-group pull-right">
-                            <md-button class="md-raised" type="button" ng-click="template = templates[2]">
-                                Clauses List
                             </md-button>
                         </div>
                     </div>

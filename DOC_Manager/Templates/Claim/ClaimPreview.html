@@ -1,1 +1,108 @@
-﻿preview claim
+﻿<div class="docBox  ">
+    <div class="docSection">
+        <h1 class="head1">{{contractHdrPreview[0].Title}} <i ng-hide="contractHdrPreview[0].Title" class="fa fa-circle-o-notch fa-spin"></i></h1>
+    </div>
+    <div class="docSection">
+        Start Date: <strong>{{contractHdrPreview[0].StartDate}} <i ng-hide="contractHdrPreview[0].Title" class="fa fa-circle-o-notch fa-spin"></i></strong> <br/>
+        End Date: <strong>{{contractHdrPreview[0].EndDate}} <i ng-hide="contractHdrPreview[0].Title" class="fa fa-circle-o-notch fa-spin"></i></strong><br/>
+        Budget : <strong>{{contractHdrPreview[0].Budget}} <i ng-hide="contractHdrPreview[0].Title" class="fa fa-circle-o-notch fa-spin"></i></strong><br/>
+        Stackholders : <strong>{{contractHdrPreview[0].Stackholders}} <i ng-hide="contractHdrPreview[0].Title" class="fa fa-circle-o-notch fa-spin"></i></strong>
+        <br /><br />
+        <!--#region clause-->
+        <h1 class="head1"><i ng-hide="getContractSmryPreview[0].Title" class="fa fa-circle-o-notch fa-spin"></i></h1>
+        <div ng-repeat="smry in getContractSmryPreview">
+            <h4 class="head3">{{smry.SortId}}. {{smry.Title}}</h4>
+            <ul>
+                <li>
+                    {{smry.Desc}}
+                </li>
+            </ul>
+            
+            
+        </div>
+
+        <!--#endregion-->
+    </div>
+</div>
+
+<style>
+  
+
+    .actionMenu-actions, .doc-box, .docBox {
+        border-radius: 3px;
+        background-color: #fff;
+        margin-bottom: 18px;
+        border: 1px solid #ddd !important;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding;
+        -o-background-clip: padding-box;
+        -ms-background-clip: padding-box;
+        -khtml-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+
+   
+
+    .head1 {
+        color:#000 !important;
+        display: block;
+        font-size: 2em;
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    .head1 {
+        font-size: 38px;
+        font-size: 2.375rem;
+        letter-spacing: -.75px;
+    }
+
+     .head3 {
+        color: #0d0d0d;
+        color: rgba(0,0,0,.95);
+        font-family: Whitney,helvetica,arial,sans-serif;
+        margin: 0;
+        padding: 0 0 9px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+
+
+    .actionMenu-actions > .doc-content:last-child, .actionMenu-actions > .docSection:last-child, .doc-box > .doc-content:last-child, .doc-box > .docSection:last-child, .docBox > .doc-content:last-child, .docBox > .docSection:last-child {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .docSection {
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid transparent;
+        padding: 18px 18px 0;
+    }
+
+   
+
+    .para{
+        -webkit-animation-duration: 0.1s;
+        -webkit-animation-name: fontfix;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 0.1s;
+    }
+
+    .para {
+        margin: 0 0 18px;
+        padding: 0;
+    }
+
+    .para {
+        display: block;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+</style>

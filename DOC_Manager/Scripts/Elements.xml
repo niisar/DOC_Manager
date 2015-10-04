@@ -71,5 +71,18 @@
     <File Path="Scripts\App\frameworks\dropdown\angular-dropdowns.min.js" Url="Scripts/App/frameworks/dropdown/angular-dropdowns.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\App\frameworks\angular-wizard\angular-wizard.css" Url="Scripts/App/frameworks/angular-wizard/angular-wizard.css" ReplaceContent="TRUE" />
     <File Path="Scripts\App\frameworks\angular-wizard\angular-wizard.js" Url="Scripts/App/frameworks/angular-wizard/angular-wizard.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\controllers\Clause\Clause.js" Url="Scripts/App/controllers/Clause/Clause.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\services\Clause\clauseSvc.js" Url="Scripts/App/services/Clause/clauseSvc.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\ag-grid.css" Url="Scripts/App/frameworks/aggridnew/ag-grid.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\ag-grid.js" Url="Scripts/App/frameworks/aggridnew/ag-grid.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\ag-grid.min.css" Url="Scripts/App/frameworks/aggridnew/ag-grid.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\ag-grid.min.js" Url="Scripts/App/frameworks/aggridnew/ag-grid.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\theme-blue.css" Url="Scripts/App/frameworks/aggridnew/theme-blue.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\theme-blue.min.css" Url="Scripts/App/frameworks/aggridnew/theme-blue.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\theme-dark.css" Url="Scripts/App/frameworks/aggridnew/theme-dark.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\theme-dark.min.css" Url="Scripts/App/frameworks/aggridnew/theme-dark.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\theme-fresh.css" Url="Scripts/App/frameworks/aggridnew/theme-fresh.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\frameworks\aggridnew\theme-fresh.min.css" Url="Scripts/App/frameworks/aggridnew/theme-fresh.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\App\services\Contract\contractSvc.js" Url="Scripts/App/services/Contract/contractSvc.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

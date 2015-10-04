@@ -3,10 +3,7 @@
     var app = angular.module('docapp');
     //#region mainCtrl
     app.controller("mainCtrl", function ($scope, $animate, $filter, ngDialog, taskSvc, $timeout) {
-        //$scope.kk = function () {
-        //    alert('d');
 
-        //};
         $scope.AllUsers = [
            {
                text: 'John',
@@ -49,7 +46,8 @@
         $scope.Category = [
          { value: '1', text: 'Finance', Priority: 'Low', ShortCode: 'L', Class: 'Green' },
          { value: '2', text: 'Human Resource', Priority: 'Medium', ShortCode: 'M', Class: 'Yellow' },
-         { value: '3', text: 'Information Technology', Priority: 'High', ShortCode: 'H', Class: 'Red' }
+         { value: '3', text: 'Information Technology', Priority: 'High', ShortCode: 'H', Class: 'Red' },
+        { value: '4', text: 'Contact Request', Priority: 'High', ShortCode: 'H', Class: 'Red' }
         ];
 
         $scope.CategoryStatus = function () {
@@ -95,8 +93,10 @@
                 Title: "",
                 Category: '',
                 Priorities: '',
+                flag: true,
             };
             getMyComment(0);
+
         }
 
 
@@ -116,7 +116,8 @@
             taskSvc.getTaskByUser($scope.LoginUser.status)
             .then(function (response) {
                 $scope.myTaskList = response.d.results;
-                $scope.resetLeftPanel();
+                $scope.TaskDtl.flag = false;
+
             });
             console.log($scope.LoginUser.status);
 
@@ -141,7 +142,6 @@
                 if (value == 'submit') {
 
                     $scope.getMyTask();
-                    //console.log($scope.myTaskList);
                     $scope.$watch('myTaskList', function () {
                         console.log('watch');
                         //$scope.getMyTask();
@@ -176,7 +176,6 @@
 
             taskSvc.addNewActivities(comment)
             .then(function (response) {
-                console.log(response);
                 getMyComment(comment.tskid);
                 $scope.comment.Cmnt = "";
             });
@@ -203,6 +202,7 @@
             taskSvc.updateUser($scope.updateUserTsk)
             .then(function (response) {
                 $scope.getMyTask();
+                $scope.resetLeftPanel();
             });
         };
 
@@ -212,11 +212,30 @@
                 ID: $scope.comment.tskid,
                 Category: $scope.TaskDtl.Category,
             };
+            console.log($scope.TaskDtl.Category);
+            if ($scope.TaskDtl.Category == "4") {
+                $scope.updateUserTsk = {
+                    ID: $scope.comment.tskid,
+                    AssignedTo: "Lynda",
+                };
 
-            taskSvc.updateCategory($scope.updatePriorityTsk)
-            .then(function (response) {
-                $scope.getMyTask();
-            });
+                taskSvc.updateUser($scope.updateUserTsk)
+                .then(function (response) {
+                    taskSvc.updateCategory($scope.updatePriorityTsk)
+                       .then(function (response) {
+                           $scope.getMyTask();
+                           $scope.resetLeftPanel();
+                       });
+                });
+
+
+            }
+            else {
+                taskSvc.updateCategory($scope.updatePriorityTsk)
+                .then(function (response) {
+                    $scope.getMyTask();
+                });
+            }
         };
 
         $scope.updateDesc = function () {
@@ -248,6 +267,7 @@
             taskSvc.compleateTask(ID)
             .then(function (response) {
                 $scope.getMyTask();
+                $scope.resetLeftPanel();
             });
         };
 
@@ -256,11 +276,11 @@
     //#endregion
 
     //#region newcrtl
-    app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc, common,  $timeout) {
+    app.controller("newctrl", function ($scope, $animate, $filter, ngDialog, taskSvc, clauseSvc, contractSvc, common, $timeout) {
         var logger = common.logger;
 
         //#region navigation
-     
+
         $scope.tabs = [
            { title: '0', name: 'New Contract', template: '../Templates/Claim/ContractStep3.html', content: "Empty Data" },
            { title: '1', name: 'Preview', template: '../Templates/Claim/ClaimPreview.html', content: "Empty Data" },
@@ -280,21 +300,24 @@
 
         $scope.navigateDashbord = function () {
             //$scope.template = $scope.templates[0];
-            console.log($scope.ContractMaster.selectedRows);
 
-            $scope.treedata = $scope.ContractMaster.selectedRows;
+
+            $scope.treedata = $scope.ContractMst.selectedRows;
+
+
         };
 
         $scope.getselected = function () {
-            console.log($scope.ContractMaster.selectedRows);
+            console.log('Delete me');
         }
 
         //#region grid
-        $scope.ContractMaster = {
+        $scope.ContractMst = {
             columnDefs: [
                 { headerName: '', width: 30, checkboxSelection: true },
                 { field: 'Title', headerName: 'Title', width: 100 },
-                  { field: 'Desc', headerName: 'Contract Description', width: 890 },
+                { field: 'Desc', headerName: 'Contract Description', width: 890 },
+                { field: 'Id', headerName: 'Id', hide: true, width: 100 },
             ],
             angularCompileRows: true,
             rowSelection: 'multiple'
@@ -303,37 +326,22 @@
 
 
         $scope.GetContractMaster = function () {
-            $scope.ContractMaster.rowData = [
-                { 'id': '1', 'ContractType': '1', 'nodes': [], 'Title': 'Name and business', 'Desc': 'The parties hereby form a partnership under the name of __________________________________________ to conduct a __________________________________________. The principal office of the business shall be in _______________________.' },
-                { 'id': '2', 'ContractType': '1', 'nodes': [], 'Title': 'Term', 'Desc': 'The partnership shall begin on ________________, 20____, and shall continue until terminated as herein provided.' },
-                { 'id': '3', 'ContractType': '1', 'nodes': [], 'Title': 'Capital', 'Desc': 'The capital of the partnership shall be contributed in cash by the partners as follows: A separate capital account shall be maintained for each partner. Neither partner shall withdraw any part of his capital account. Upon the demand of either partner, the capital accounts of the partners shall be maintained at all times in the proportions in which the partners share in the profits and losses of the partnership.' },
-                { 'id': '4', 'ContractType': '1', 'nodes': [], 'Title': 'Profit and loss', 'Desc': 'The net profits of the partnership shall be divided equally between the partners and the net losses shall be borne equally by them. A separate income account shall be maintained for each partner. Partnership profits and losses shall be charged or credited to the separate income account of each partner. If a partner has no credit balance in his income account, losses shall be charged to his capital account.' },
-                { 'id': '5', 'ContractType': '1', 'nodes': [], 'Title': 'Salaries and drawings', 'Desc': 'Neither partner shall receive any salary for services rendered to the partnership. Each partner may, from time to time, withdraw the credit balance in his income account.' },
-                { 'id': '6', 'ContractType': '1', 'nodes': [], 'Title': 'Interest', 'Desc': 'No interest shall be paid on the initial contributions to the capital of the partnership or on any subsequent contributions of capital.' },
-                { 'id': '7', 'ContractType': '1', 'nodes': [], 'Title': 'Banking', 'Desc': 'All funds of the partnership shall be deposited in its name in such checking account or accounts as shall be designated by the partners. All withdrawals are to be made upon checks signed by either partner.' },
-                { 'id': '8', 'ContractType': '1', 'nodes': [], 'Title': 'Books', 'Desc': 'The partnership books shall be maintained at the principal office of the partnership, and each partner shall at all times have access thereto. The books shall be kept on a fiscal year basis, commencing _____________________ and ending _____________________, and shall be closed and balanced at the end of each fiscal year. An audit shall be made as of the closing date.' },
+            clauseSvc.getAll()
+              .then(function (response) {
+                  $scope.ContractMst.rowData = response.d.results;
 
-                { 'id': '9', 'ContractType': '2', 'nodes': [], 'Title': 'Vendor', 'Desc': 'Under this Software License Agreement (the "Agreement"), Karansoft (the "Vendor") grants to the user (the "Licensee") a non-exclusive and non-transferable license (the "License") to use AsanaPro (the "Software").' },
-                { 'id': '10', 'ContractType': '2', 'nodes': [], 'Title': 'Title1', 'Desc': '"Software" includes the executable computer programs and any related printed, electronic and online documentation and any other files that may accompany the product.' },
-                { 'id': '11', 'ContractType': '2', 'nodes': [], 'Title': 'Title1', 'Desc': 'Title, copyright, intellectual property rights and distribution rights of the Software remain exclusively with the Vendor. Intellectual property rights include the look and feel of the Software. This Agreement constitutes a license for use only and is not in any way a transfer of ownership rights to the Software.' },
-                { 'id': '12', 'ContractType': '2', 'nodes': [], 'Title': 'Title1', 'Desc': 'This Agreement grants a site license to the Licensee. The Software may be loaded onto a maximum of 3 computers.' },
-                { 'id': '13', 'ContractType': '2', 'nodes': [], 'Title': 'Title1', 'Desc': 'The Software may not be modified, reverse-engineered, or de-compiled in any manner through current or future available technologies.' },
-            ];
-
-            if ($scope.ContractMaster.api) {
-                $scope.ContractMaster.api.onNewRows();
-                $scope.ContractMaster.api.refreshView();
-                $scope.ContractMaster.api.setRows();
-            }
+              });
         };
         $scope.GetContractMaster();
 
         $scope.newClause = [];
-        $scope.addContractMaster = function (newClause) {
-            $scope.tempContractMaster = [{ 'id': '14', 'ContractType': newClause.ContractType, 'nodes': [], 'Title': newClause.Title, 'Desc': newClause.Desc }];
-            $scope.ContractMaster.rowData = $scope.tempContractMaster.concat($scope.ContractMaster.rowData);
 
-            $scope.newClause.ContractType = "1";
+        $scope.addContractMaster = function (newClause) {
+            $scope.tempContractMaster = [{ 'Id': '14', 'Category': newClause.ClauseType, 'nodes': [], 'Title': newClause.Title, 'Desc': newClause.Desc }];
+            $scope.tempContractMaster2 = $scope.tempContractMaster.concat($scope.ContractMaster.rowData);
+            $scope.ContractMaster.rowData = $scope.tempContractMaster2;
+
+            $scope.newClause.ClauseType = "1";
             $scope.newClause.Title = "";
             $scope.newClause.Desc = "";
             logger.logSuccess("Clause Saved.", null, "newctrl");
@@ -357,7 +365,6 @@
 
         $scope.newSubItem = function (scope) {
             var nodeData = scope.$modelValue;
-            //console.log(scope.$modelValue);
             nodeData.nodes.push({
                 id: nodeData.id * 10 + nodeData.nodes.length,
                 Title: nodeData.Title + '.' + (nodeData.nodes.length + 1),
@@ -428,6 +435,63 @@
         //#region material
 
         //#endregion
+
+        //#region crud
+        $scope.contractHdrPreview = [];
+        $scope.getContractSmryPreview = [];
+        $scope.getContractPreview = function () {
+            contractSvc.getContractHdr($scope.contractHdrID).then(function (response) {
+                $scope.contractHdrPreview = response.d.results;
+                console.log($scope.contractHdrPreview);
+            });
+            contractSvc.getContractSmry($scope.contractHdrID).then(function (response) {
+                $scope.getContractSmryPreview = response.d.results;
+            });
+        };
+
+
+        $scope.addContractHdr = function (contractHdr) {
+            contractSvc.addContractHdr(contractHdr)
+            .then(function (response) {
+                logger.logSuccess("Saved Succesfully.", null, "newctrl");
+                //console.log(response.d.ID);
+                $scope.contractHdrID = response.d.ID;
+            });
+        };
+        $scope.contractSmry = [];
+        $scope.addContractSmry = function () {
+            $scope.tempSortId = 0;
+            angular.forEach($scope.treedata, function (item) {
+                $scope.tempSortId = $scope.tempSortId + 1;
+                $scope.contractSmry.Title = item.Title;
+                $scope.contractSmry.Desc = item.Desc;
+                $scope.contractSmry.CONTRACT_HDR_ID = $scope.contractHdrID.toString();;
+                $scope.contractSmry.Category = item.Category;
+                $scope.contractSmry.CLAUSE_MST_ID = item.Id.toString();
+                $scope.contractSmry.SortId = $scope.tempSortId;
+                contractSvc.addContractSmry($scope.contractSmry)
+                .then(function (response) {
+
+                });
+
+            });
+            $timeout(function () {
+                $scope.getContractPreview();
+            }, 4000);
+        };
+
+
+
+
+
+        //#endregion
+
+        $scope.finishedWiz = function () {
+            logger.logSuccess("Published", null, "newctrl");
+        };
+        $scope.SaveWiz = function () {
+            logger.logSuccess("Saved", null, "newctrl");
+        };
     });
     //#endregion
 })();

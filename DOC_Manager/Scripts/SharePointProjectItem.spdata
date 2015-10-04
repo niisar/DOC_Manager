@@ -72,5 +72,18 @@
     <ProjectItemFile Source="App\frameworks\dropdown\angular-dropdowns.min.js" Target="Scripts\App\frameworks\dropdown\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\angular-wizard\angular-wizard.css" Target="Scripts\App\frameworks\angular-wizard\" Type="ElementFile" />
     <ProjectItemFile Source="App\frameworks\angular-wizard\angular-wizard.js" Target="Scripts\App\frameworks\angular-wizard\" Type="ElementFile" />
+    <ProjectItemFile Source="App\controllers\Clause\Clause.js" Target="Scripts\App\controllers\Clause\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\Clause\clauseSvc.js" Target="Scripts\App\services\Clause\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\ag-grid.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\ag-grid.js" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\ag-grid.min.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\ag-grid.min.js" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\theme-blue.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\theme-blue.min.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\theme-dark.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\theme-dark.min.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\theme-fresh.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\frameworks\aggridnew\theme-fresh.min.css" Target="Scripts\App\frameworks\aggridnew\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\Contract\contractSvc.js" Target="Scripts\App\services\Contract\" Type="ElementFile" />
   </Files>
 </ProjectItem>

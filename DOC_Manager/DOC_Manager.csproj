@@ -182,6 +182,7 @@
     <Content Include="Scripts\App\common\common.js" />
     <Content Include="Scripts\App\configs\config.js" />
     <Content Include="Scripts\App\configs\config.exceptionHandeler.js" />
+    <Content Include="Scripts\App\controllers\Clause\Clause.js" />
     <Content Include="Scripts\App\controllers\Document\FileList.js" />
     <Content Include="Scripts\App\controllers\Task\DashBoard.js" />
     <Content Include="Scripts\App\controllers\Task\DeleteTask.js" />
@@ -189,6 +190,16 @@
     <Content Include="Scripts\App\controllers\Task\UpdateTask.js" />
     <Content Include="Scripts\App\controllers\Task\AddTask.js" />
     <Content Include="Scripts\App\controllers\Task\AllTask.js" />
+    <Content Include="Scripts\App\frameworks\aggridnew\ag-grid.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\ag-grid.js" />
+    <Content Include="Scripts\App\frameworks\aggridnew\ag-grid.min.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\ag-grid.min.js" />
+    <Content Include="Scripts\App\frameworks\aggridnew\theme-blue.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\theme-blue.min.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\theme-dark.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\theme-dark.min.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\theme-fresh.css" />
+    <Content Include="Scripts\App\frameworks\aggridnew\theme-fresh.min.css" />
     <Content Include="Scripts\App\frameworks\angular-wizard\angular-wizard.css" />
     <Content Include="Scripts\App\frameworks\angular-wizard\angular-wizard.js" />
     <Content Include="Scripts\App\frameworks\dropdown\angular-dropdowns.css" />
@@ -202,13 +213,19 @@
     <Content Include="Scripts\App\frameworks\xeditable\css\xeditable.css" />
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.js" />
     <Content Include="Scripts\App\frameworks\xeditable\js\xeditable.min.js" />
+    <Content Include="Scripts\App\services\Clause\clauseSvc.js" />
+    <Content Include="Scripts\App\services\Contract\contractSvc.js" />
     <Content Include="Scripts\App\services\task\taskSvc.js" />
     <Content Include="Templates\Claim\ContractStep2.html" />
     <Content Include="Templates\Claim\ClaimPreview.html" />
     <Content Include="Templates\Claim\ClaimDashbord.html" />
     <Content Include="Templates\Claim\ContractStep3.html" />
-    <Content Include="Templates\Claim\ClauseNew.html" />
+    <Content Include="Templates\Claim\ClauseNew_x.html" />
     <Content Include="Templates\Claim\Dashboard.html" />
+    <Content Include="Templates\Clause\ClaimDashbord.html" />
+    <Content Include="Templates\Clause\ClauseNew.html" />
+    <Content Include="Templates\Clause\ClauseList.html" />
+    <Content Include="Templates\Clause\Dashboard.html" />
     <Content Include="Templates\Contract\ContractAdd.html" />
     <Content Include="Templates\Contract\Clauses.html" />
     <Content Include="Templates\layout\spAppChrome.html" />
@@ -295,7 +312,9 @@
     <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.tpls.js" />
     <Content Include="Scripts\App\frameworks\ngToast\angular-toastr.tpls.min.js" />
     <Content Include="Scripts\App\modules\app.js" />
-    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />

@@ -44,11 +44,22 @@
                          content: 'Contract'
                      }
                  }
+             },
+             {
+                 url: '/Clause',
+                 config: {
+                     templateUrl: '../Templates/Clause/Dashboard.html',
+                     title: '',
+                     settings: {
+                         nav: 2,
+                         content:''
+                     }
+                 }
              }
         ];
     }
 
-
+    
     //#endregion
 
     //#region other configuration
