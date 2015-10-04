@@ -439,15 +439,22 @@
         //#region crud
         $scope.contractHdrPreview = [];
         $scope.getContractSmryPreview = [];
+        $scope.allContractHdrPreview = [];
+        contractSvc.getAllContractHdr().then(function (response) {
+            $scope.allContractHdrPreview = response.d.results;
+            console.log(response.d.results);
+        });
         $scope.getContractPreview = function () {
+            
             contractSvc.getContractHdr($scope.contractHdrID).then(function (response) {
                 $scope.contractHdrPreview = response.d.results;
-                console.log($scope.contractHdrPreview);
             });
             contractSvc.getContractSmry($scope.contractHdrID).then(function (response) {
                 $scope.getContractSmryPreview = response.d.results;
             });
         };
+
+        
 
 
         $scope.addContractHdr = function (contractHdr) {

@@ -13,6 +13,11 @@
             return baseService.getRequest(query);
         };
 
+        var getAllContractHdr = function () {
+            var query = listEndPoint + "GetByTitle('CONTRACT__HDR')/Items?$select=Title,ID,StartDate,EndDate,Category,Budget,Stackholders";
+            return baseService.getRequest(query);
+        };
+
         var getContractSmry = function (id) {
             var query = listEndPoint + "GetByTitle('CONTRACT_SMRY')/Items?$select=SortId,ID,Title,Desc&$filter=CONTRACT_HDR_ID eq " + id + " &$orderby=SortId";
             return baseService.getRequest(query);
@@ -52,6 +57,7 @@
             getContractSmry: getContractSmry,
             addContractHdr: addContractHdr,
             addContractSmry: addContractSmry,
+            getAllContractHdr: getAllContractHdr,
 
         };
     }]);
